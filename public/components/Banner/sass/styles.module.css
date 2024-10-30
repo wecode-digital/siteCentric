@@ -1,0 +1,39 @@
+.banner {
+  background-image: url("../../../../app/assets/png/bannerPrincipal.png");
+  padding: 10.5rem 1rem 5rem 1rem;
+}
+.banner .textsBanner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.banner .textsBanner .tituloBanner {
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.banner .textsBanner .tituloBanner .emphasiTitle {
+  font-weight: 700;
+}
+.banner .textsBanner .textBanner {
+  color: #bdad83;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.banner .button {
+  border: 1px solid #fff;
+  border-radius: 62.5rem;
+  padding: 0.9375rem 1.5rem;
+  background: #93133c;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

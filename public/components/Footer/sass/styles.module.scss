@@ -1,0 +1,64 @@
+@import "../../../../app/styles/padroes/padroes.scss";
+
+.footer {
+  background-color: $neutral-800;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .tituloFooter {
+    padding: 0 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 3rem;
+
+    .subtituloFooter {
+      color: $neutral-600;
+      font-size: $fontSize3;
+      font-style: normal;
+      font-weight: $weight3;
+      line-height: normal;
+    }
+
+    .contatoEnderecoFooter {
+      color: $pure-white;
+      font-size: $fontSize1;
+      font-style: normal;
+      font-weight: $weight2;
+      line-height: 1.5rem;
+    }
+
+    .linksFooter {
+      color: $pure-white;
+      text-align: start;
+      font-size: $fontSize2;
+      font-style: normal;
+      font-weight: $weight1;
+      line-height: 1.5rem;
+    }
+
+    .redesFooter {
+      display: flex;
+      flex-direction: row;
+      gap: 1.25rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .rodapeLocalization {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    background-color: #e91034;
+    gap: 1rem;
+
+    .textRodape {
+      color: $pure-white;
+      font-size: $fontSize1;
+      font-style: normal;
+      font-weight: $weight1;
+      line-height: 1.5rem;
+    }
+  }
+}

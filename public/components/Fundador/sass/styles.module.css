@@ -1,0 +1,55 @@
+.sectionFounders {
+  padding: 5rem 1rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  display: flex;
+  color: #1e1e1e;
+}
+.sectionFounders .titles {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sectionFounders .titles .titleFounders {
+  color: #bababa;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.sectionFounders .titles .knowFounders {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sectionFounders .titles .knowFounders > span {
+  color: #e91034;
+  font-weight: 700;
+}
+.sectionFounders .Founder {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sectionFounders .Founder .aboutFounder {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sectionFounders .Founder .aboutFounder .title {
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 1.5rem;
+}
+.sectionFounders .Founder .text {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

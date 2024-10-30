@@ -1,0 +1,46 @@
+@import "../../../../app/styles/padroes/padroes.scss";
+
+.sectionWhere {
+  padding: 2rem 1rem;
+  background: $neutral-200;
+  .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+
+    .titleWhere {
+      color: $neutral-800;
+      font-size: $fontSize6;
+      font-style: normal;
+      font-weight: $weight2;
+      line-height: normal;
+      margin-top: 0.5rem;
+
+      > span {
+        color: $color--brand-primary;
+        font-weight: $weight5;
+      }
+    }
+    .text {
+      color: $neutral-900;
+      font-size: $fontSize2;
+      font-weight: $weight2;
+      line-height: normal;
+    }
+
+    .identificacaoSection {
+      color: $neutral-600;
+      font-size: $fontSize3;
+      font-style: normal;
+      font-weight: $weight5;
+      line-height: normal;
+    }
+  }
+
+  .imagensWhere {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

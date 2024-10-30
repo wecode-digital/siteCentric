@@ -1,0 +1,65 @@
+.sectionCertificados {
+  padding: 5rem 1rem;
+  background-color: #f5f5f5;
+}
+.sectionCertificados .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: normal;
+  font-style: normal;
+}
+.sectionCertificados .texts .title {
+  color: #bababa;
+  font-size: 1rem;
+  font-weight: 1.25rem;
+}
+.sectionCertificados .texts .titleCertificados {
+  color: #1e1e1e;
+  font-size: 1.5rem;
+}
+.sectionCertificados .texts .titleCertificados > span {
+  color: #e91034;
+  font-weight: 700;
+}
+.sectionCertificados .texts .text {
+  color: #353a42;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 1rem 0 2rem 0;
+}
+.sectionCertificados .containerCertificados {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+.sectionCertificados .containerCertificados .boxCertificados {
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border: 1px solid #c2c2c2;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+.sectionCertificados .containerCertificados .boxCertificadosCenter {
+  display: flex;
+  height: 10.1875rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border: 1px solid #c2c2c2;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  left: 50%;
+}

@@ -1,0 +1,54 @@
+// @font-face {
+//   font-family: '';
+//   src: url('') format('truetype');
+// }
+
+// font-family:'';
+// $font-family: font-family;
+
+$fontSize1: 0.75rem;
+$fontSize2: 0.875rem;
+$fontSize3: 1rem;
+$fontSize4: 1.125rem;
+$fontSize5: 1.25rem;
+$fontSize6: 1.5rem;
+$fontSize7: 2rem;
+$fontSize8: 2.5rem;
+
+$weight1: 300;
+$weight2: 400;
+$weight3: 500;
+$weight4: 600;
+$weight5: 700;
+$weight6: 800;
+$weight7: 900;
+
+$color--brand-primary: #e91034;
+
+$pure-black: #000;
+$pure-white: #fff;
+
+$neutral-200: #f5f5f5;
+$neutral-400: #c2c2c2;
+$neutral-600: #bababa;
+$neutral-800: #1e1e1e;
+$neutral-900: #353a42;
+
+@mixin btn1 {
+  border: 1px solid $pure-white;
+  border-radius: 62.5rem;
+  padding: 0.9375rem 1.5rem;
+  background: $color--brand-secondary-500;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+@mixin btn2 {
+  border: 1px solid $pure-white;
+  border-radius: 62.5rem;
+  padding: 0.9375rem 1.5rem;
+  background: $color--brand-primary;
+  border: 1px solid $color--brand-secondary-500;
+}
+
+$color--brand-secondary-150: #dbad83;
+$color--brand-secondary-500: #93133c;

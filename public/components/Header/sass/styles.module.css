@@ -1,0 +1,10 @@
+.header {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1.25rem;
+  position: fixed;
+  top: 0;
+  width: -moz-available;
+  margin-left: -16px;
+}

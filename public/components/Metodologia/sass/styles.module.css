@@ -1,0 +1,24 @@
+.sectioMetodologia {
+  padding: 5rem 1rem;
+  font-style: normal;
+  line-height: normal;
+}
+.sectioMetodologia .texts .titleMetodologia {
+  color: #bababa;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.sectioMetodologia .texts .title {
+  color: #1e1e1e;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.sectioMetodologia .texts .title > span {
+  color: #e91034;
+  font-weight: 700;
+}
+.sectioMetodologia .texts .text {
+  color: #353a42;
+  font-size: 0.875rem;
+  font-weight: 400;
+}

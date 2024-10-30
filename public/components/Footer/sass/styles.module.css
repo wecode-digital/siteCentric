@@ -1,0 +1,55 @@
+.footer {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.footer .tituloFooter {
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+.footer .tituloFooter .subtituloFooter {
+  color: #bababa;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.footer .tituloFooter .contatoEnderecoFooter {
+  color: #fff;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.footer .tituloFooter .linksFooter {
+  color: #fff;
+  text-align: start;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+.footer .tituloFooter .redesFooter {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+.footer .rodapeLocalization {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  background-color: #e91034;
+  gap: 1rem;
+}
+.footer .rodapeLocalization .textRodape {
+  color: #fff;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}

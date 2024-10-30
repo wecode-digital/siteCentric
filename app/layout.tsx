@@ -1,4 +1,8 @@
 import type { Metadata } from "next";
+import Header from "@/public/components/Header/Header";
+import Footer from "@/public/components/Footer/Footer";
+
+
 // import localFont from "next/font/local";
 import "./globals.css";
 
@@ -24,9 +28,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
+        <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+        <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet"></link>
       <body>
+          {/* <Header /> */}
         {children}
+          <Footer/>
       </body>
     </html>
   );

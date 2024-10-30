@@ -1,0 +1,52 @@
+.sectionProposito {
+  padding: 5rem 1rem;
+}
+.sectionProposito .containerTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-style: normal;
+  line-height: normal;
+}
+.sectionProposito .containerTexts .propositoIdentificador {
+  color: #bababa;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.sectionProposito .containerTexts .title {
+  color: #1e1e1e;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.sectionProposito .containerTexts .title > span {
+  color: #93133c;
+  font-weight: 700;
+}
+.sectionProposito .slides {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  max-height: 100%;
+}
+.sectionProposito .slides .partSlides {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: #dbad83;
+  margin: 1.5rem 0 5rem 0;
+  gap: 2rem;
+}
+.sectionProposito .slides .partSlides .numerationSlide {
+  color: #93133c;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.sectionProposito .slides .partSlides .textSlide {
+  color: #1e1e1e;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}

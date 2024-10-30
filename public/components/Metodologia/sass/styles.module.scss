@@ -1,0 +1,31 @@
+@import "../../../../app/styles/padroes/padroes.scss";
+
+.sectioMetodologia {
+  padding: 5rem 1rem;
+  font-style: normal;
+  line-height: normal;
+
+  .texts {
+    .titleMetodologia {
+      color: $neutral-600;
+      font-size: $fontSize3;
+      font-weight: $weight5;
+    }
+    .title {
+      color: $neutral-800;
+      font-size: $fontSize6;
+      font-weight: $weight2;
+
+      > span {
+        color: $color--brand-primary;
+        font-weight: $weight5;
+      }
+    }
+
+    .text {
+      color: $neutral-900;
+      font-size: $fontSize2;
+      font-weight: $weight2;
+    }
+  }
+}
