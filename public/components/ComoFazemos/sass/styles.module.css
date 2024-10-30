@@ -1,0 +1,46 @@
+.sectioComo {
+  padding: 5rem 1rem;
+  font-style: normal;
+  line-height: normal;
+}
+.sectioComo .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sectioComo .texts .titleComo {
+  color: #bababa;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.sectioComo .texts .title {
+  color: #1e1e1e;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.sectioComo .texts .title > span {
+  color: #e91034;
+  font-weight: 700;
+}
+.sectioComo .sectionPlanejamento {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sectioComo .sectionPlanejamento .planejamento {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.12);
+  margin: 2rem 0 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.sectioComo .sectionPlanejamento .planejamento .subtitulo {
+  color: #1e1e1e;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+}

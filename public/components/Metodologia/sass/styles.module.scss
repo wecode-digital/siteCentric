@@ -6,6 +6,10 @@
   line-height: normal;
 
   .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
     .titleMetodologia {
       color: $neutral-600;
       font-size: $fontSize3;
