@@ -12,7 +12,7 @@ export default function Proposito () {
 
 
     return(
-        <section className={styles.sectionProposito}>
+        <section className={styles.sectionProposito} id='proposito'>
             <div className={styles.containerTexts}>
                 <p className={styles.propositoIdentificador}>Propósito</p>
                 <h1 className={styles.title}>Nossos <span>diferenciais</span></h1>
@@ -34,7 +34,29 @@ export default function Proposito () {
                             <h1 className={styles.numerationSlide}>1</h1>
                             <p className={styles.textSlide}>Modelo boutique com atendimento prestado pelos fundadores de forma exclusiva e dedicada</p>
                         </div>
+
+                        <div className={styles.partSlides}>
+                            <h1 className={styles.numerationSlide}>2</h1>
+                            <p className={styles.textSlide}>Estratégia de mídia paga desenvolvida a partir da experiência em operações de e-commerce</p>
+                        </div>
+
+                        <div className={styles.partSlides}>
+                            <h1 className={styles.numerationSlide}>3</h1>
+                            <p className={styles.textSlide}>Equipe com atuação exclusiva em mídia paga, garantindo alta expertise e excelência nos resultados gerados</p>
+                        </div>
+                        
+                        <div className={styles.partSlides}>
+                            <h1 className={styles.numerationSlide}>4</h1>
+                            <p className={styles.textSlide}>Plano de mídia desenvolvido sob medida e alinhado à estratégia e perfil de cada empresa</p>
+                        </div>
+
+                        <div className={styles.partSlides}>
+                            <h1 className={styles.numerationSlide}>5</h1>
+                            <p className={styles.textSlide}>Estratégia e execução orientadas à aceleração do e-commerce e maximização de ROAS.</p>
+                        </div>
                 </div>
+
+
 
         </section>
     )

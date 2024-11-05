@@ -5,6 +5,20 @@
   padding: 1.5rem 1.25rem;
   position: fixed;
   top: 0;
-  width: -moz-available;
+  width: 100%;
   margin-left: -16px;
+  transition: all 0.3s ease-in-out !important;
+  z-index: 1;
+  align-items: center;
+}
+
+.header.scrollDiferent {
+  background: #fff !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.header.scrollDiferent svg path {
+  fill: #e91034;
+}
+.header.scrollDiferent .hamburguerSvg path {
+  fill: #1e1e1e;
 }

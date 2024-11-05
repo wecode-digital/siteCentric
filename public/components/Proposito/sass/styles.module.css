@@ -1,5 +1,5 @@
 .sectionProposito {
-  padding: 5rem 1rem;
+  padding: 5rem 1rem 0;
 }
 .sectionProposito .containerTexts {
   display: flex;
@@ -27,6 +27,8 @@
   flex-direction: row;
   gap: 1.5rem;
   max-height: 100%;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 .sectionProposito .slides .partSlides {
   display: flex;
@@ -35,6 +37,8 @@
   background-color: #dbad83;
   margin: 1.5rem 0 5rem 0;
   gap: 2rem;
+  width: 12.1875rem;
+  height: 13.75rem;
 }
 .sectionProposito .slides .partSlides .numerationSlide {
   color: #93133c;
@@ -42,6 +46,8 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.5rem;
+  width: 12.1875rem;
+  height: 13.75rem;
 }
 .sectionProposito .slides .partSlides .textSlide {
   color: #1e1e1e;
@@ -49,4 +55,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem;
+}
+.sectionProposito .slides::-webkit-scrollbar {
+  display: none;
 }

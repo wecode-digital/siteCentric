@@ -1,0 +1,12 @@
+@import "../../../../app/styles/padroes/padroes.scss";
+
+.whatsapp {
+  background-color: $neutral-800;
+  width: fit-content;
+  padding: 1rem;
+  border: 1px solid $pure-white;
+  border-radius: 62.5rem;
+  position: fixed;
+  right: 0;
+  margin: 3rem 1rem;
+}

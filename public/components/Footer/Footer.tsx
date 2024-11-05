@@ -1,11 +1,14 @@
 
 import styles from "./sass/styles.module.css";
+import Link from "next/link";
 
 export default function Footer () {
-    return (
-        <>
 
-        <footer className={styles.footer}>
+
+    return (
+        
+
+        <footer className={styles.footer} id="footer">
              {/* sessão de explore */}
              <section className={styles.tituloFooter}>
                 <div>
@@ -13,19 +16,24 @@ export default function Footer () {
                 </div>
 
                 <div className={styles.linksFooter}>
-                    <a href="#">Quem somos</a>
+                    <Link href="#nossos-clientes">Nossos clientes</Link>
                 </div>
 
                 <div className={styles.linksFooter}>
-                    <a href="#">O que fazemos</a>
+                    <Link href="#quem-somos">Quem somos</Link>
                 </div>
                
                 <div className={styles.linksFooter}>
-                    <a href="#">Nossos clientes</a>
+                    <Link href="#proposito">Propósito</Link>
                 </div>
 
+                
                 <div className={styles.linksFooter}>
-                    <a href="#">Entre em contato</a>
+                    <Link href="#metodologia">Metodologia</Link>
+                </div>  
+
+                <div className={styles.linksFooter}>
+                    <Link href="#contato">Entre em contato</Link>
                 </div>  
             </section>
 
@@ -38,7 +46,7 @@ export default function Footer () {
                 </div>
 
                 <div className={styles.contatoEnderecoFooter}>
-                    <a href="#" target="_blank">+55 (54) 2222-0235</a>
+                    <a href="tel:+55(54)2222-0235" target="_blank">+55 (54) 2222-0235</a>
                 </div>
             </section>
 
@@ -61,7 +69,7 @@ export default function Footer () {
                 
                 <div className={styles.redesFooter}>
                     <div>
-                    <a href="">
+                    <a href="https://www.instagram.com/centric.ag/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M16.8145 1.17676H6.83182C3.61069 1.17676 1 3.78791 1 7.00858V16.9913C1 20.2124 3.61115 22.8231 6.83228 22.8231H16.8141C20.0352 22.8231 22.6464 20.212 22.6464 16.9908V7.00858C22.6464 3.78745 20.0352 1.17676 16.8141 1.17676H16.8145Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
                                 <path d="M11.8232 17.2251C14.709 17.2251 17.0483 14.8857 17.0483 12C17.0483 9.11425 14.709 6.7749 11.8232 6.7749C8.93749 6.7749 6.59814 9.11425 6.59814 12C6.59814 14.8857 8.93749 17.2251 11.8232 17.2251Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
@@ -71,7 +79,7 @@ export default function Footer () {
                     </div>
 
                     <div>
-                        <a href="">
+                        <a href="https://www.facebook.com/centric.ag/" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M12.1416 0.504883C5.80396 0.504883 0.646484 5.66236 0.646484 12C0.646484 18.3376 5.80396 23.4951 12.1416 23.4951C18.4792 23.4951 23.6367 18.3376 23.6367 12C23.6367 5.66236 18.4792 0.504883 12.1416 0.504883ZM12.1416 1.83104C17.4437 1.83104 22.1592 6.69788 22.1592 12C22.1616 14.2932 21.1117 16.9259 19.6148 18.6632C18.1179 20.4005 15.8354 21.7605 13.567 22.0973V14.7933H16.2952L16.7234 12.022H13.567V10.5085C13.567 9.359 13.9454 8.33689 15.0211 8.33689H16.7502V5.91908C16.4465 5.87789 15.8038 5.78881 14.5891 5.78881C12.0525 5.78881 10.5658 7.12799 10.5658 10.1799V12.022H7.95834V14.7933H10.5658V22.0733C8.32882 21.7051 5.97068 20.1906 4.50453 18.4614C3.03838 16.7322 2.02801 14.2671 2.03061 12C2.03061 6.69788 6.83948 1.83104 12.1416 1.83104Z" fill="white"/>
                             </svg>
@@ -79,7 +87,7 @@ export default function Footer () {
                     </div>
 
                     <div>
-                        <a href="">
+                        <a href="https://www.linkedin.com/company/104325349/admin/dashboard/" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                                 <g clip-path="url(#clip0_1329_571)">
                                     <path d="M5.04199 9.39746H8.38259V19.4477H5.04199V9.39746Z" fill="white"/>
@@ -119,6 +127,6 @@ export default function Footer () {
             </section>
 
         </footer>
-        </>
+        
     )
 }

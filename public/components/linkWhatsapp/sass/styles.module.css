@@ -1,0 +1,11 @@
+.whatsapp {
+  background-color: #1e1e1e;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  border: 1px solid #fff;
+  border-radius: 62.5rem;
+  position: fixed;
+  right: 0;
+  margin: 3rem 1rem;
+}

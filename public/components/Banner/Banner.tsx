@@ -1,11 +1,14 @@
 
 import styles from "./sass/styles.module.css";
 import Header from "@/public/components/Header/Header";
+import LinkWhatsapp from "../linkWhatsapp/linkWhatsapp";
+import Link from "next/link";
 
 export default function Banner () {
 
     return (
-            <section className={styles.banner}>
+            
+            <section className={styles.banner} id="quem-somos">
                 <Header/>
                 <div className={styles.textsBanner}>
                     <div className={styles.tituloBanner}>
@@ -18,12 +21,14 @@ export default function Banner () {
                 </div>
                 
                 <div>
-                    <a className={styles.button} href="#">
+                    <Link className={styles.button} href="#footer">
                         Saiba mais
-                    </a>
+                    </Link>
                 </div>
 
+                <LinkWhatsapp/>
                 
             </section>
+           
     )
 }

@@ -2,7 +2,9 @@
 
 .banner {
   background-image: url("../../../../app/assets/png/bannerPrincipal.png");
-  padding: 10.5rem 1rem 5rem 1rem;
+  padding: 8rem 1rem 5rem 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .textsBanner {
     display: flex;

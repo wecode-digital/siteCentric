@@ -1,6 +1,6 @@
 @import "../../../../app/styles/padroes/padroes.scss";
 .sectionProposito {
-  padding: 5rem 1rem;
+  padding: 5rem 1rem 0;
 
   .containerTexts {
     display: flex;
@@ -32,6 +32,8 @@
     flex-direction: row;
     gap: 1.5rem;
     max-height: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
 
     .partSlides {
       display: flex;
@@ -40,6 +42,8 @@
       background-color: $color--brand-secondary-150;
       margin: 1.5rem 0 5rem 0;
       gap: 2rem;
+      width: 12.1875rem;
+      height: 13.75rem;
 
       .numerationSlide {
         color: $color--brand-secondary-500;
@@ -47,6 +51,8 @@
         font-style: normal;
         font-weight: $weight3;
         line-height: 1.5rem;
+        width: 12.1875rem;
+        height: 13.75rem;
       }
 
       .textSlide {
@@ -57,5 +63,9 @@
         line-height: 1.5rem;
       }
     }
+  }
+
+  .slides::-webkit-scrollbar {
+    display: none;
   }
 }

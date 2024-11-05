@@ -2,7 +2,7 @@ import styles from '../Fundador/sass/styles.module.css'
 export default function Fundador () {
     
     return(
-        <section className={styles.sectionFounders}>
+        <section className={styles.sectionFounders} id='quem-somos'>
             <div className={styles.titles}>
                 <p className={styles.titleFounders}>Fundadores</p>
                 <h1 className={styles.knowFounders}>Conheça nossos <span>fundadores</span></h1>

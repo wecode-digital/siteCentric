@@ -1,7 +1,8 @@
 .sectioMetodologia {
-  padding: 5rem 1rem;
+  padding: 2.5rem 1rem 0;
   font-style: normal;
   line-height: normal;
+  background-color: #f5f5f5;
 }
 .sectioMetodologia .texts {
   display: flex;
@@ -26,4 +27,175 @@
   color: #353a42;
   font-size: 0.875rem;
   font-weight: 400;
+}
+.sectioMetodologia .containerSlider {
+  display: flex;
+  flex-direction: row;
+  padding: 2.5rem 0rem;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  gap: 0.5rem;
+}
+.sectioMetodologia .containerSlider .itemsSlider1 {
+  padding: 0rem 4.5rem;
+  width: 10.25rem;
+  height: 10.25rem;
+  justify-content: center;
+  background-color: #e91034;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  gap: 0.625rem;
+}
+.sectioMetodologia .containerSlider .itemsSlider1 .svg {
+  border-radius: 1.25rem;
+  border: 1px solid #fff;
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+}
+.sectioMetodologia .containerSlider .itemsSlider1 .textSlider {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 100px;
+}
+.sectioMetodologia .containerSlider .itemsSlider2 {
+  padding: 0rem 4.5rem;
+  width: 10.25rem;
+  height: 10.25rem;
+  justify-content: center;
+  background-color: #d71136;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  gap: 0.625rem;
+}
+.sectioMetodologia .containerSlider .itemsSlider2 .svg {
+  border-radius: 1.25rem;
+  border: 1px solid #fff;
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+}
+.sectioMetodologia .containerSlider .itemsSlider2 .textSlider {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 100px;
+}
+.sectioMetodologia .containerSlider .itemsSlider3 {
+  padding: 0rem 4.5rem;
+  width: 10.25rem;
+  height: 10.25rem;
+  justify-content: center;
+  background-color: #bf1238;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  gap: 0.625rem;
+}
+.sectioMetodologia .containerSlider .itemsSlider3 .svg {
+  border-radius: 1.25rem;
+  border: 1px solid #fff;
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+}
+.sectioMetodologia .containerSlider .itemsSlider3 .textSlider {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 100px;
+}
+.sectioMetodologia .containerSlider .itemsSlider4 {
+  padding: 0rem 4.5rem;
+  width: 10.25rem;
+  height: 10.25rem;
+  justify-content: center;
+  background-color: #ac133a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  gap: 0.625rem;
+}
+.sectioMetodologia .containerSlider .itemsSlider4 .svg {
+  border-radius: 1.25rem;
+  border: 1px solid #fff;
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+}
+.sectioMetodologia .containerSlider .itemsSlider4 .textSlider {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 100px;
+}
+.sectioMetodologia .containerSlider .itemsSlider5 {
+  padding: 0rem 4.5rem;
+  width: 10.25rem;
+  height: 10.25rem;
+  justify-content: center;
+  background-color: #93133c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  gap: 0.625rem;
+}
+.sectioMetodologia .containerSlider .itemsSlider5 .svg {
+  border-radius: 1.25rem;
+  border: 1px solid #fff;
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+}
+.sectioMetodologia .containerSlider .itemsSlider5 .textSlider {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 100px;
+}
+.sectioMetodologia .slides::-webkit-scrollbar {
+  display: none;
 }

@@ -1,9 +1,10 @@
 @import "../../../../app/styles/padroes/padroes.scss";
 
 .sectioMetodologia {
-  padding: 5rem 1rem;
+  padding: 2.5rem 1rem 0;
   font-style: normal;
   line-height: normal;
+  background-color: $neutral-200;
 
   .texts {
     display: flex;
@@ -31,5 +32,193 @@
       font-size: $fontSize2;
       font-weight: $weight2;
     }
+  }
+
+  .containerSlider {
+    display: flex;
+    flex-direction: row;
+    padding: 2.5rem 0rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    gap: 0.5rem;
+
+    .itemsSlider1 {
+      padding: 0rem 4.5rem;
+      width: 10.25rem;
+      height: 10.25rem;
+      justify-content: center;
+      background-color: $color--brand-primary;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      gap: 0.625rem;
+
+      .svg {
+        border-radius: 1.25rem;
+        border: 1px solid $pure-white;
+        border-radius: 1.25rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.625rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .textSlider {
+        color: $pure-white;
+        font-size: $fontSize3;
+        font-style: normal;
+        font-weight: $weight5;
+        line-height: 1.5rem;
+        text-align: center;
+        width: 100px;
+      }
+    }
+
+    .itemsSlider2 {
+      padding: 0rem 4.5rem;
+      width: 10.25rem;
+      height: 10.25rem;
+      justify-content: center;
+      background-color: $color--brand-secundary;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      gap: 0.625rem;
+
+      .svg {
+        border-radius: 1.25rem;
+        border: 1px solid $pure-white;
+        border-radius: 1.25rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.625rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .textSlider {
+        color: $pure-white;
+        font-size: $fontSize3;
+        font-style: normal;
+        font-weight: $weight5;
+        line-height: 1.5rem;
+        text-align: center;
+        width: 100px;
+      }
+    }
+
+    .itemsSlider3 {
+      padding: 0rem 4.5rem;
+      width: 10.25rem;
+      height: 10.25rem;
+      justify-content: center;
+      background-color: $color--brand-tertiary;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      gap: 0.625rem;
+
+      .svg {
+        border-radius: 1.25rem;
+        border: 1px solid $pure-white;
+        border-radius: 1.25rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.625rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .textSlider {
+        color: $pure-white;
+        font-size: $fontSize3;
+        font-style: normal;
+        font-weight: $weight5;
+        line-height: 1.5rem;
+        text-align: center;
+        width: 100px;
+      }
+    }
+
+    .itemsSlider4 {
+      padding: 0rem 4.5rem;
+      width: 10.25rem;
+      height: 10.25rem;
+      justify-content: center;
+      background-color: $color--brand-quaternary;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      gap: 0.625rem;
+
+      .svg {
+        border-radius: 1.25rem;
+        border: 1px solid $pure-white;
+        border-radius: 1.25rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.625rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .textSlider {
+        color: $pure-white;
+        font-size: $fontSize3;
+        font-style: normal;
+        font-weight: $weight5;
+        line-height: 1.5rem;
+        text-align: center;
+        width: 100px;
+      }
+    }
+
+    .itemsSlider5 {
+      padding: 0rem 4.5rem;
+      width: 10.25rem;
+      height: 10.25rem;
+      justify-content: center;
+      background-color: $color--brand-secondary-500;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      gap: 0.625rem;
+
+      .svg {
+        border-radius: 1.25rem;
+        border: 1px solid $pure-white;
+        border-radius: 1.25rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.625rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .textSlider {
+        color: $pure-white;
+        font-size: $fontSize3;
+        font-style: normal;
+        font-weight: $weight5;
+        line-height: 1.5rem;
+        text-align: center;
+        width: 100px;
+      }
+    }
+  }
+
+  .slides::-webkit-scrollbar {
+    display: none;
   }
 }

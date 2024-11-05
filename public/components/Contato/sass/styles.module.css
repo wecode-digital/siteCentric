@@ -1,0 +1,90 @@
+.sectionContato {
+  padding: 1.25rem 1.25rem 2.5rem;
+  background-color: #f5f5f5;
+}
+.sectionContato .containerDados {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.08);
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+}
+.sectionContato .containerDados .texts {
+  color: #1e1e1e;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.sectionContato .containerDados .texts .titleContact {
+  color: #bababa;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.sectionContato .containerDados .texts .title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.sectionContato .containerDados .texts .title > span {
+  color: #e91034;
+  font-weight: 700;
+}
+.sectionContato .containerDados .texts .text {
+  font-size: 0.75rem;
+}
+.sectionContato .group_form {
+  flex-direction: column;
+  display: flex;
+  width: inherit;
+  gap: 1.5rem;
+}
+.sectionContato .group_form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.sectionContato .group_form > div > label {
+  color: #1e1e1e;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sectionContato .group_form input,
+.sectionContato .group_form textarea:focus {
+  outline: none;
+}
+.sectionContato .group_form .button {
+  padding: 0.9375rem 2rem;
+  border-radius: 62.5rem;
+  border: 1px solid #93133c;
+  background: #e91034;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+}
+.sectionContato .group_form .button input {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+.sectionContato .items_form {
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #f3f3f3;
+  background: #fff;
+  color: #bababa;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

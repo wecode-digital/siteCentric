@@ -1,9 +1,10 @@
 @import "../../../../app/styles/padroes/padroes.scss";
 
 .sectioComo {
-  padding: 5rem 1rem;
+  padding: 2.5rem 1rem 3.5rem;
   font-style: normal;
   line-height: normal;
+  background-color: $neutral-200;
 
   .texts {
     display: flex;
@@ -20,6 +21,7 @@
       color: $neutral-800;
       font-size: $fontSize6;
       font-weight: $weight2;
+      margin-bottom: 2rem;
 
       > span {
         color: $color--brand-primary;
@@ -33,22 +35,54 @@
     flex-direction: column;
     gap: 1rem;
 
+    > div:first-child {
+      .planejamento {
+        .subtitulo {
+          color: $neutral-800;
+        }
+        svg path {
+          fill: $neutral-800;
+        }
+      }
+
+      .contentText {
+        background-color: $neutral-800;
+      }
+    }
+
     .planejamento {
       padding: 1.5rem;
       display: flex;
       flex-direction: row;
       background: $pure-white;
       box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.12);
-      margin: 2rem 0 2.5rem;
       justify-content: space-between;
       align-items: center;
+      cursor: pointer;
 
       .subtitulo {
-        color: $neutral-800;
+        color: $color--brand-secondary-500;
         font-size: $fontSize2;
         font-style: normal;
         font-weight: $weight5;
         line-height: 1.5rem;
+      }
+
+      svg path {
+        fill: $color--brand-secondary-500;
+      }
+    }
+
+    .contentText {
+      padding: 1.5rem;
+      background-color: $color--brand-secondary-500;
+
+      > p {
+        color: $pure-white;
+        font-size: $fontSize2;
+        font-style: normal;
+        font-weight: $weight2;
+        line-height: normal;
       }
     }
   }
