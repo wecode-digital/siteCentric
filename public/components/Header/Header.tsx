@@ -13,6 +13,7 @@ export default function Header() {
     console.log("cliquei");
   };
 
+
   useEffect(() => {
     const scrollPage = () => {
       setIsScrolled(window.scrollY > 0);

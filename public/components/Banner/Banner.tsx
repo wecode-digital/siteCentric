@@ -21,7 +21,7 @@ export default function Banner () {
                 </div>
                 
                 <div>
-                    <Link className={styles.button} href="#footer">
+                    <Link className={styles.button} href="#contato">
                         Saiba mais
                     </Link>
                 </div>

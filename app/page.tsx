@@ -10,6 +10,7 @@ import Fundador from "@/public/components/Fundador/Fundador";
 import Banner from "@/public/components/Banner/Banner";
 import Localizacao from "@/public/components/Localizacao/Localizacao";
 import NossosClientes from "@/public/components/NossosClientes/NossosClientes";
+import { useEffect } from "react";
 // import { useEffect } from "react";
 export default function Home() {
 //  type testeTyping = {
@@ -22,7 +23,8 @@ export default function Home() {
 //     console.log('Hello Next.Js');
 //   },[])
 
-  return (
+
+   return (
     <>
           <Banner/>
           <NossosClientes/>
