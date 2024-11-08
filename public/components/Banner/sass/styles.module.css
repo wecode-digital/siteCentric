@@ -4,11 +4,26 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (min-width: 1008px) {
+  .banner {
+    background-image: url("../../../assets//png/banner-desk.png");
+    height: 1026px;
+  }
+}
 .banner .textsBanner {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 1008px) {
+  .banner .textsBanner {
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+  }
 }
 .banner .textsBanner .tituloBanner {
   color: #fff;

@@ -2,6 +2,7 @@
 import styles from "./sass/styles.module.scss";
 import Menu from "../Menu/Menu";
 import { useEffect, useState, useRef } from "react";
+import Link from "next/link";
 
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
@@ -9,8 +10,8 @@ export default function Header() {
   const headerRef = useRef(null);
 
   const abreMenu = () => {
-    setOpen(!isOpen);
-    console.log("cliquei");
+    setOpen(curr => !curr);
+    console.log("cliquei",isOpen);
   };
 
 
@@ -34,6 +35,7 @@ export default function Header() {
       >
         <div>
           <svg
+            className={styles.svgIconeHeader}
             xmlns="http://www.w3.org/2000/svg"
             width="54.68px"
             height="56px"
@@ -50,7 +52,7 @@ export default function Header() {
           </svg>
         </div>
 
-        <div id="buttonHamburguer" onClick={abreMenu}>
+        <div id="buttonHamburguer" onClick={abreMenu} className={styles.buttonHamburguer}>
           <svg
           className={styles.hamburguerSvg}
             xmlns="http://www.w3.org/2000/svg"
@@ -70,6 +72,21 @@ export default function Header() {
               </clipPath>
             </defs>
           </svg>
+        </div>
+
+        <div className={styles.itemsMenuDesk}>
+          <ul>
+            <li className={styles.listItems}>
+              <Link href="#">Nossos clientes</Link>
+              <Link href="#">Quem somos</Link>
+              <Link href="#">Onde Estamos</Link>
+              <Link href="#">Diferenciais</Link>
+              <Link href="#">Certificados</Link>
+              <Link href="#">Metodologia</Link>
+              <Link href="#">Soluções</Link>
+              <Link href="#">Contato</Link>
+            </li>
+          </ul>
         </div>
       </section>
 

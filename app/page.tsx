@@ -10,20 +10,39 @@ import Fundador from "@/public/components/Fundador/Fundador";
 import Banner from "@/public/components/Banner/Banner";
 import Localizacao from "@/public/components/Localizacao/Localizacao";
 import NossosClientes from "@/public/components/NossosClientes/NossosClientes";
-import { useEffect } from "react";
-// import { useEffect } from "react";
+import ContatoDesk from "@/public/components/Contato/ContatoDesk/ContatoDesk";
+import ComoFazemosDesk from "@/public/components/ComoFazemos/ComoFazemosDesk/ComoFazemosDesk";
+import CertificadosDesk from "@/public/components/Certificados/CertificadosDesk/CertificadosDesk";
+import FundadorDesk from "@/public/components/Fundador/FundadorDesk/FundadorDesk";
+import LocalizacaoDesk from "@/public/components/Localizacao/LocalizacaoDesk/LocalizacaoDesk";
 export default function Home() {
-//  type testeTyping = {
-//   teste2:string|null
-//  }
- 
-//   let teste:string
 
-//   useEffect(()=>{
-//     console.log('Hello Next.Js');
-//   },[])
+     
+    const controlWindowLargura = window.innerWidth;
+
+    //se a minha tela tiver mais do que 1008px ou igual a 1008px
+    if(controlWindowLargura >= 1008){
+      return(
+         <>
+          <Banner/>
+          <NossosClientes/>
+          <FundadorDesk/>
+          <LocalizacaoDesk/>
+          <Proposito />
+          <CertificadosDesk/>
+          <Metodologia/>
+          <ComoFazemosDesk/>
+          <ContatoDesk/>
+         </>
+      )
+    }
+
+    //renderiza isso
 
 
+    //senão 
+
+    //renderiza isso
    return (
     <>
           <Banner/>
@@ -36,6 +55,7 @@ export default function Home() {
           <ComoFazemos/>
           <Contato/>
     </>
+
 
   );
 }

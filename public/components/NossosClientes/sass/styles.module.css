@@ -10,6 +10,16 @@
   grid-row-gap: 2rem;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 1008px) {
+  .nossosClientes .containerClientes {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 7.5rem;
+    grid-row-gap: 5rem;
+    justify-items: center;
+    padding: 0 !important;
+  }
+}
 .nossosClientes .textsNossosClientes {
   display: flex;
   flex-direction: column;
@@ -30,6 +40,11 @@
   font-weight: 400;
   line-height: normal;
 }
+@media screen and (min-width: 1008px) {
+  .nossosClientes .textsNossosClientes {
+    text-align: center;
+  }
+}
 .nossosClientes .button {
   border: 1px solid #fff;
   border-radius: 62.5rem;
@@ -44,4 +59,9 @@
 }
 .nossosClientes .belasLetras {
   grid-column: 2;
+}
+@media screen and (min-width: 1008px) {
+  .nossosClientes .belasLetras {
+    grid-column: auto;
+  }
 }
