@@ -10,3 +10,10 @@
   margin: 3rem 1rem;
   top: 24.5rem;
 }
+@media screen and (min-width: 1008px) {
+  .whatsapp {
+    margin: 3rem 5rem;
+    bottom: 0;
+    top: auto;
+  }
+}

@@ -71,6 +71,11 @@
         align-items: center;
         gap: 1rem;
 
+        .imgFounder {
+          width: 94px;
+          height: 94px;
+        }
+
         .title {
           font-style: normal;
           font-weight: $weight5;

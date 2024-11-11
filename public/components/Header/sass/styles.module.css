@@ -9,7 +9,7 @@
   margin-left: -16px;
   transition: all 0.3s ease-in-out !important;
   z-index: 1;
-  align-items: center;
+  align-items: start;
 }
 .header .itemsMenuDesk {
   display: none;
@@ -32,6 +32,10 @@
     flex-direction: row;
     color: #fff;
   }
+  .header .itemsMenuDesk .listItems a:hover {
+    text-decoration: underline;
+    color: #93133c;
+  }
   .header svg path {
     width: 159px !important;
     height: 162.84px !important;
@@ -42,11 +46,16 @@
 }
 
 .header.scrollDiferent {
+  align-items: center;
   background: #fff !important;
   transition: all 0.3s ease-in-out !important;
 }
 .header.scrollDiferent svg path {
   fill: #e91034;
+}
+.header.scrollDiferent .svgIconeHeader {
+  width: 54.68px;
+  height: 56px;
 }
 .header.scrollDiferent .hamburguerSvg path {
   fill: #1e1e1e;
@@ -81,7 +90,7 @@
   }
   .header.scrollDiferent .itemsMenuDesk .listItems a:hover {
     cursor: pointer;
-    color: black;
+    color: #93133c;
   }
   .header.scrollDiferent svg {
     padding: 0.5rem 0;

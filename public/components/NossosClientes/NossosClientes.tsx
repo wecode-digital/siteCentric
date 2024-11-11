@@ -386,7 +386,7 @@ export default function NossosClientes () {
 
                     </div>
 
-                <div>
+                <div className={styles.buttonDiv}>
                     <Link className={styles.button} href="#contato">
                         Saiba mais
                     </Link>

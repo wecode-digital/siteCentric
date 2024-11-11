@@ -2,26 +2,26 @@ import styles from "./sass/styles.module.css";
 import { useState, useEffect} from "react";
 import Link from "next/link";
 
-export default function Menu() {
-    const [isOpen, setOpen] = useState(true);
+interface PropsMenu {
+    menuOpen: boolean;
+    setMenuOpen: (open: boolean) => void
+}
 
-    const fechaMenu = () => {
-        setOpen(false);
-        console.log("cliquei pra fechar");
-    };
-
+export default function Menu({menuOpen, setMenuOpen}: PropsMenu) {
+   
+    
     useEffect(() => {
-        document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+        document.body.style.overflow = menuOpen ? 'hidden' : 'auto';
         console.log("Funciona");
         console.log("Conferindo overflow", document.body.style.overflow);
 
         return() => {
             document.body.style.overflow = 'auto';
         }
-    }, [isOpen]);
+    }, [menuOpen]);
     
 
-    if (!isOpen) {
+    if (!menuOpen) {
         return null;
     }
 
@@ -38,7 +38,7 @@ export default function Menu() {
                     <path d="M49.3774 51.9275C51.882 51.9275 53.5006 50.8397 54.6642 49.6002V54.204C53.2224 55.3169 51.7047 55.9999 49.1243 55.9999C43.4327 55.9999 39.4105 52.2559 39.4105 46.7416C39.4105 41.2274 43.4327 37.4834 49.1243 37.4834C51.7047 37.4834 53.2224 38.1664 54.6642 39.2793V43.883C53.5006 42.6436 51.8814 41.5558 49.3774 41.5558C46.5188 41.5558 44.0656 43.4783 44.0656 46.7416C44.0656 50.005 46.5194 51.9275 49.3774 51.9275Z" fill="white"/>
                 </svg>
 
-                <svg id="fechaMenu" onClick={fechaMenu} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <svg id="fechaMenu" onClick={()=> setMenuOpen(false)} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                     <path d="M13 13L1 1M13 1L1 13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
             </div>
@@ -46,11 +46,11 @@ export default function Menu() {
             <div>
                 <ul>
                     <li className={styles.containerLinks}>
-                        <Link href="#nossos-clientes" onClick={fechaMenu}>Nossos Clientes</Link>
-                        <Link href="#quem-somos" onClick={fechaMenu}>Quem Somos</Link>
-                        <Link href="#proposito" onClick={fechaMenu}>Propósito</Link>
-                        <Link href="#metodologia" onClick={fechaMenu}>Metodologia</Link>
-                        <Link href="#contato" onClick={fechaMenu}>Contato</Link>
+                        <Link href="#nossos-clientes" onClick={()=> setMenuOpen(false)}>Nossos Clientes</Link>
+                        <Link href="#quem-somos" onClick={()=> setMenuOpen(false)}>Quem Somos</Link>
+                        <Link href="#proposito" onClick={()=> setMenuOpen(false)}>Propósito</Link>
+                        <Link href="#metodologia" onClick={()=> setMenuOpen(false)}>Metodologia</Link>
+                        <Link href="#contato" onClick={()=> setMenuOpen(false)}>Contato</Link>
                     </li>
                 </ul>
             </div>

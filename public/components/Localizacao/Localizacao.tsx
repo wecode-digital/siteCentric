@@ -13,14 +13,14 @@ export default function Localizacao () {
             </div>
 
             <div className={styles.imagensWhere}>
-                <img src="../../assets/png/entrada-office.png" alt="entrada" />
-                <img src="../../assets/png/entrada-office2.png" alt="entrada" />
-                <img src="../../assets/png/area-desenvolvimento.png" alt="entrada" />
-                <img src="../../assets/png/sala-privada1.png" alt="entrada" />
-                <img src="../../assets/png/sala-reunioes.png" alt="entrada" />
-                <img src="../../assets/png/sala1.png" alt="entrada" />
-                <img src="../../assets/png/sala-cubo.png" alt="entrada" />
-                <img src="../../assets/png/sala-privada2.png" alt="entrada" />
+                <img src="../../assets/png/ondeEstamos1.png" alt="entrada" />
+                <img src="../../assets/png/ondeEstamos2.png" alt="entrada" />
+                <img src="../../assets/png/ondeEstamos3.png" alt="entrada" />
+                <img src="../../assets/png/ondeEstamos4.png" alt="entrada" />
+                <img src="../../assets/png/ondeEstamos5.png" alt="entrada" />
+                <img src="../../assets/png/ondeEstamos6.png" alt="entrada" />
+                <img src="../../assets/png/ondeEstamos7.png" alt="entrada" />
+                <img src="../../assets/png/ondeEstamos8.png" alt="entrada" />
             </div>
         </section>
     )

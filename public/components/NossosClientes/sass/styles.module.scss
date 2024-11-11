@@ -18,7 +18,7 @@
       grid-column-gap: 7.5rem;
       grid-row-gap: 5rem;
       justify-items: center;
-      padding: 0 !important;
+      padding: 0 15% !important;
     }
   }
 
@@ -42,6 +42,17 @@
       font-style: normal;
       font-weight: $weight2;
       line-height: normal;
+
+      span {
+        color: $color--brand-primary;
+        font-size: $fontSize5;
+        font-style: normal;
+        font-weight: $weight5;
+        line-height: normal;
+      }
+
+      @media screen and (min-width: 1008px) {
+      }
     }
 
     @media screen and (min-width: 1008px) {
@@ -49,13 +60,21 @@
     }
   }
 
-  .button {
-    @include btn2;
-    color: $pure-white;
-    font-size: $fontSize2;
-    font-style: normal;
-    font-weight: $weight5;
-    line-height: normal;
+  .buttonDiv {
+    .button {
+      @include btn2;
+      color: $pure-white;
+      font-size: $fontSize2;
+      font-style: normal;
+      font-weight: $weight5;
+      line-height: normal;
+    }
+
+    @media screen and (min-width: 1008px) {
+      padding: 5rem 0 0;
+      position: relative;
+      left: 47%;
+    }
   }
 
   .belasLetras {

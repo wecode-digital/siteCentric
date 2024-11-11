@@ -11,7 +11,7 @@
   margin-left: -16px;
   transition: all 0.3s ease-in-out !important;
   z-index: 1;
-  align-items: center;
+  align-items: start;
 
   .itemsMenuDesk {
     display: none;
@@ -33,6 +33,11 @@
           display: flex;
           flex-direction: row;
           color: $pure-white;
+
+          &:hover {
+            text-decoration: underline;
+            color: $color--brand-secondary-500;
+          }
         }
       }
     }
@@ -52,11 +57,17 @@
 
 .header.scrollDiferent {
   //Mobile
+  align-items: center;
   background: $pure-white !important;
   transition: all 0.3s ease-in-out !important;
 
   svg path {
     fill: $color--brand-primary;
+  }
+
+  .svgIconeHeader {
+    width: 54.68px;
+    height: 56px;
   }
 
   .hamburguerSvg path {
@@ -92,7 +103,7 @@
 
           &:hover {
             cursor: pointer;
-            color: black; //trocar essa cor depois
+            color: $color--brand-secondary-500;
           }
         }
       }

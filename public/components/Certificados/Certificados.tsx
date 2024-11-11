@@ -12,27 +12,27 @@ export default function Certificados () {
 
             <div className={styles.containerCertificados}>
                 <div className={styles.boxCertificados}>
-                    <img src="../../assets/svg/certificado-meta.svg" alt="certificado-meta" />
+                    <img className={styles.imgCertificados} src="../../assets/png/certificado1-mobile.png" alt="certificado-meta" />
                 </div>
 
                 <div className={styles.boxCertificados}>
-                    <img src="../../assets/svg/certificado-googlePartner.svg" alt="certificado-google-partner" />
+                    <img className={styles.imgCertificados} src="../../assets/png/certificado2-mobile.png" alt="certificado-google-partner" />
                 </div>
 
                 <div className={styles.boxCertificados}>
-                    <img src="../../assets/svg/certificado-tiktok.svg" alt="certificado-tiktok-ads" />
+                    <img className={styles.imgCertificados} src="../../assets/png/certificado3-mobile.png" alt="certificado-tiktok-ads" />
                 </div>
 
                 <div className={styles.boxCertificados}>
-                    <img src="../../assets/svg/certificado-pinterest.svg" alt="certificado-marketing-partners" />
+                    <img className={styles.imgCertificados} src="../../assets/png/certificado4-mobile.png" alt="certificado-marketing-partners" />
                 </div>
 
                 <div className={styles.boxCertificados}>
-                    <img src="../../assets/svg/certificado-looker.png" alt="certificado-looker" />
+                    <img className={styles.imgCertificados} src="../../assets/png/certificado5-mobile.png" alt="certificado-looker" />
                 </div>
 
                 <div className={styles.boxCertificados}>
-                    <img src="../../assets/svg/certificado-analytics.svg" alt="certificado-google-analytics" />
+                    <img className={styles.imgCertificados} src="../../assets/png/certificado6-mobile.png" alt="certificado-google-analytics" />
                 </div>
 
                 <div className={styles.boxCertificados}>
@@ -41,11 +41,11 @@ export default function Certificados () {
                 </div>
 
                 <div className={styles.boxCertificados}>
-                    <img src="../../assets/svg/certificado-stape.svg" alt="certificado-stape"/>
+                    <img className={styles.imgCertificados} src="../../assets/png/certificado8-mobile.png" alt="certificado-stape"/>
                 </div>
 
                 <div className={styles.boxCertificadosCenter}>
-                    <img src="../../assets/svg/certificado-googleCloud.svg" alt="certificado-google-cloud"/>
+                    <img className={styles.imgCertificados} src="../../assets/svg/certificado-googleCloud.svg" alt="certificado-google-cloud"/>
                 </div>
             </div>
         </section>

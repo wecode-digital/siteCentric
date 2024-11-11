@@ -1,19 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styles from "./sass/styles.module.css";
-import assert from 'assert';
 
 type ContactInfo = {
-  name: string,
-  email: string,
-  enterprise: string,
-  phone: string,
-  honeypot: string,
-  message: string,
-  replyTo: string,
-  accessKey: string
-}
+  name: string;
+  email: string;
+  enterprise: string;
+  phone: string;
+  honeypot: string;
+  message: string;
+  replyTo: string;
+  accessKey: string;
+};
 
-export default function Contato () {
+export default function Contato() {
   const [contact, setContact] = useState<ContactInfo>({
     name: '',
     email: '',
@@ -32,33 +31,28 @@ export default function Contato () {
 
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
-  useEffect(() => {
-    if (response.type.toLowerCase().includes('success')) {
-      setTimeout(() => {
-        // Limpa a resposta após 5 segundos
-        setResponse({ type: '', message: '' });
-      }, 5000);
+  const mphone = (v: string) => {
+    let r = v.replace(/\D/g, "");
+    r = r.replace(/^0/, "");
+    if (r.length > 10) {
+      r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+    } else if (r.length > 5) {
+      r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+    } else if (r.length > 2) {
+      r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+    } else {
+      r = r.replace(/^(\d*)/, "($1");
     }
-  }, [response]);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    // assert(e.target.name, 'nao existe nome');
-    setContact({ ...contact, [e.target.name]: e.target.value });
+    return r;
   };
 
-  const dataLayerEvent = (data: ContactInfo) => {
-    if (typeof window.dataLayer !== 'undefined' && window.dataLayer?.push) {
-      window.dataLayer.push({
-        dadosCliente: {
-          nome: data.name,
-          empresa: data.enterprise,
-          telefone: data.phone,
-          email: data.email,
-          mensagem: data.message
-        },
-        event: "submitFormCentric"
-      });
-    }
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+
+    setContact(prevContact => ({
+      ...prevContact,
+      [name]: name === 'phone' ? mphone(value) : value
+    }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -76,9 +70,7 @@ export default function Contato () {
 
       if (json.success) {
         setResponse({ type: 'success', message: 'Enviado' });
-        dataLayerEvent(contact);
 
-        // Limpar os campos do formulário
         setContact({
           name: '',
           email: '',
@@ -89,13 +81,19 @@ export default function Contato () {
           replyTo: 'jullyene.ramos@wecode.digital',
           accessKey: '1089cc73-812f-4929-b781-885addb93934'
         });
+
+        setTimeout(() => {
+          setIsButtonDisabled(false);
+          setResponse({ type: '', message: '' });
+        }, 3000);
+
       } else {
         setResponse({ type: 'error', message: json.message });
+        setIsButtonDisabled(false);
       }
     } catch (e) {
       console.log('An error occurred', e);
       setResponse({ type: 'error', message: 'An error occurred while submitting the form' });
-    } finally {
       setIsButtonDisabled(false);
     }
   };
@@ -156,8 +154,7 @@ export default function Contato () {
                 onChange={handleChange}
                 placeholder="+55 (000) 9 9999-9999"
                 maxLength={15}
-                minLength={10}
-                pattern="(\(?\d{2}\)?\s)?(\d{4,5}\-\d{4})"
+                required
               />
             </div>
 

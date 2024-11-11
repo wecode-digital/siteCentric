@@ -52,6 +52,9 @@
   box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.08);
   background-color: #fff;
 }
+.sectionCertificados .containerCertificados .boxCertificados .imgCertificados {
+  width: 100px;
+}
 .sectionCertificados .containerCertificados .boxCertificadosCenter {
   display: flex;
   height: 10.1875rem;

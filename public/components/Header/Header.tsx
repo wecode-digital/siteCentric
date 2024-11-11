@@ -5,13 +5,19 @@ import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 
 export default function Header() {
-  const [isOpen, setOpen] = useState(false);
+   
+  const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const headerRef = useRef(null);
 
+  console.table(menuOpen)
+  
+
   const abreMenu = () => {
-    setOpen(curr => !curr);
-    console.log("cliquei",isOpen);
+    setTimeout(function() {
+      setMenuOpen(curr => !curr);
+      console.log("cliquei",menuOpen);
+    },);
   };
 
 
@@ -37,8 +43,8 @@ export default function Header() {
           <svg
             className={styles.svgIconeHeader}
             xmlns="http://www.w3.org/2000/svg"
-            width="54.68px"
-            height="56px"
+            width=" 90.943px"
+            height="93.139px"
             viewBox="0 0 91 94"
             fill="none"
           >
@@ -90,7 +96,7 @@ export default function Header() {
         </div>
       </section>
 
-      {isOpen && <Menu />}
+      {menuOpen && <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>}
     </>
   );
 }

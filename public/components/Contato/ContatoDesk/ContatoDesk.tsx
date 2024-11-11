@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styles from "./sass/styles.module.css";
-// import assert from 'assert';
 
 type ContactInfo = {
   name: string,
@@ -35,15 +34,26 @@ export default function ContatoDesk () {
   useEffect(() => {
     if (response.type.toLowerCase().includes('success')) {
       setTimeout(() => {
-        // Limpa a resposta após 5 segundos
         setResponse({ type: '', message: '' });
       }, 5000);
     }
   }, [response]);
 
+  // Função para formatar telefone
+  const formatPhone = (value: string) => {
+    return value
+      .replace(/\D/g, '')
+      .replace(/^(\d{2})(\d)/, '($1) $2')
+      .replace(/(\d{5})(\d)/, '$1-$2')
+      .replace(/(-\d{4})\d+?$/, '$1');
+  };
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    // assert(e.target.name, 'nao existe nome');
-    setContact({ ...contact, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setContact({
+      ...contact,
+      [name]: name === 'phone' ? formatPhone(value) : value
+    });
   };
 
   const dataLayerEvent = (data: ContactInfo) => {
@@ -78,7 +88,6 @@ export default function ContatoDesk () {
         setResponse({ type: 'success', message: 'Enviado' });
         dataLayerEvent(contact);
 
-        // Limpar os campos do formulário
         setContact({
           name: '',
           email: '',
@@ -161,6 +170,7 @@ export default function ContatoDesk () {
                 maxLength={15}
                 minLength={10}
                 pattern="(\(?\d{2}\)?\s)?(\d{4,5}\-\d{4})"
+                required
               />
             </div>
 

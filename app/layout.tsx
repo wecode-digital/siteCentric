@@ -4,7 +4,7 @@ import "./globals.css";
 import localFont from 'next/font/local';
 
 const myFont = localFont({
-  src: './assets/fonts/Jost-300-Light.otf',
+  src: './assets/fonts/Jost-400-Book.otf',
   display: 'swap',
 })
 
