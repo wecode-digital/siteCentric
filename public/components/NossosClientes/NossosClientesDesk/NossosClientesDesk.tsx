@@ -2,7 +2,7 @@
 // import { text } from "stream/consumers";
 import styles from "./sass/styles.module.css";
 import Link from "next/link";
-export default function NossosClientes () {
+export default function NossosClientesDesk () {
 
     return (
         
@@ -26,11 +26,11 @@ export default function NossosClientes () {
                     <div className={styles.containerClientes}>
                         
                         <div>
-                            <img src="../../assets/png/logo-politorno.png" alt="politorno" width={81} height={"auto"}/>
+                            <img src="../../assets/png/logo-politorno.png" alt="politorno"/>
                         </div>
 
                         <div>
-                            <img src="../../assets/png/logo-kappesberg.png" alt="kappesberg" width={80} height={18}/>
+                            <img src="../../assets/png/logo-kappesberg.png" alt="kappesberg" />
                         </div>
 
                         <div>

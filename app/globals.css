@@ -15,8 +15,14 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
+  font-family: "Jost";
 }
+
+@font-face {
+  font-family: "Jost";
+  src: url("./assets/fonts/Jost-400-Book.otf");
+}
+
 
 a {
   color: inherit;

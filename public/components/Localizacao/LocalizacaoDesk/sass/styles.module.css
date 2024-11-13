@@ -1,40 +1,41 @@
-.sectionWhere {
-  padding: 2rem 1rem;
+.sectionWhereDesk {
+  padding: 7.5rem 0rem;
   background: #f5f5f5;
 }
-.sectionWhere .texts {
+.sectionWhereDesk .texts {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
 }
-.sectionWhere .texts .titleWhere {
+.sectionWhereDesk .texts .titleWhere {
   color: #1e1e1e;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 0.5rem;
 }
-.sectionWhere .texts .titleWhere > span {
+.sectionWhereDesk .texts .titleWhere > span {
   color: #e91034;
   font-weight: 700;
 }
-.sectionWhere .texts .text {
+.sectionWhereDesk .texts .text {
   color: #353a42;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: normal;
 }
-.sectionWhere .texts .identificacaoSection {
+.sectionWhereDesk .texts .identificacaoSection {
   color: #bababa;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.sectionWhere .imagensWhere {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.sectionWhereDesk .imagensWhere {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-gap: 0.5rem 0.5rem;
+  justify-content: center;
 }

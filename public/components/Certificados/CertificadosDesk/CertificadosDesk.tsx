@@ -38,21 +38,21 @@ export default function CertificadosDesk () {
                     <img src="/assets/png/certificado5-desktop.png" alt="certificado-looker" />
                 </div>
 
-                <div className={styles.boxCertificados}>
+                <div className={styles.boxCertificados2}>
                     <img src="/assets/png/certificado6-desktop.png" alt="certificado-google-analytics" />
                 </div>
 
-                <div className={styles.boxCertificados}>
+                <div className={styles.boxCertificados2}>
                     {/* <img src="/assets/png/certificado7-1-desktop.png" alt="certificado-google-tag-manager" />
                     <img src="/assets/png/certificado7-2-desktop.png" alt="certificado-google-tag-manager" /> */}
                      <img src="/assets/png/certificado6-desktop.png" alt="certificado-google-analytics" />
                 </div>
 
-                <div className={styles.boxCertificados}>
+                <div className={styles.boxCertificados2}>
                     <img src="/assets/png/certificado8-desktop.png" alt="certificado-stape"/>
                 </div>
 
-                <div className={styles.boxCertificados}>
+                <div className={styles.boxCertificados2}>
                     <img src="/assets/png/certificado9-desktop.png" alt="certificado-google-cloud"/>
                 </div>
             </div>

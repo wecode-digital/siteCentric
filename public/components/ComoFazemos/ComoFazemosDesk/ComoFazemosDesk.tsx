@@ -2,7 +2,7 @@ import {useState} from "react";
 import styles from "./sass/styles.module.css"
 import assert from "assert";
 
-export default function ComoFazemosDesk (props:any) {
+export default function ComoFazemos (props:any) {
     const arrayItens = props.arrayItens || [];
 
     
@@ -45,7 +45,7 @@ export default function ComoFazemosDesk (props:any) {
     
 
     return(
-        <section className={styles.sectioComoDesk}>
+        <section className={styles.sectioComo}>
             <div className={styles.texts}>
                 <p className={styles.titleComo}>Como fazemos</p>
                 <h1 className={styles.title}>Conheça as principais <span>entregas</span> que sustentam a <span>evolução</span> <span>contínua</span> do projeto e garantem a obtenção de <span>resultados</span>

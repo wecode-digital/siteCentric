@@ -34,6 +34,10 @@
         color: $color--brand-primary;
         font-weight: $weight5;
       }
+
+      @media screen and (min-width: 1008px) {
+        font-size: $fontSize8;
+      }
     }
 
     @media screen and (min-width: 1008px) {

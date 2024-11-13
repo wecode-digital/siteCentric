@@ -15,47 +15,45 @@ import ComoFazemosDesk from "@/public/components/ComoFazemos/ComoFazemosDesk/Com
 import CertificadosDesk from "@/public/components/Certificados/CertificadosDesk/CertificadosDesk";
 import FundadorDesk from "@/public/components/Fundador/FundadorDesk/FundadorDesk";
 import LocalizacaoDesk from "@/public/components/Localizacao/LocalizacaoDesk/LocalizacaoDesk";
+import NossosClientesDesk from "@/public/components/NossosClientes/NossosClientesDesk/NossosClientesDesk";
+
 export default function Home() {
 
-     
-    const controlWindowLargura = window.innerWidth;
+  const a = window   
+  if(!a) return<></>
+    const controlWindowLargura = a?.innerWidth;
 
+    console.table(controlWindowLargura)
     //se a minha tela tiver mais do que 1008px ou igual a 1008px
-    if(controlWindowLargura >= 1008){
+   
       return(
-         <>
-          <Banner/>
-          <NossosClientes/>
-          <FundadorDesk/>
-          <LocalizacaoDesk/>
-          <Proposito />
-          <CertificadosDesk/>
-          <Metodologia/>
-          <ComoFazemosDesk/>
-          <ContatoDesk/>
+        
+         <> 
+         {controlWindowLargura >= 1008?
+          <>
+            <Banner/>
+            <NossosClientesDesk/>
+            <FundadorDesk/>
+            <LocalizacaoDesk/>
+            <Proposito />
+            <CertificadosDesk/>
+            <Metodologia/>
+            <ComoFazemosDesk/>
+            <ContatoDesk/>
+          </>
+          :
+          <>
+            <Banner/>
+            <NossosClientes/>
+            <Fundador/>
+            <Localizacao/>
+            <Proposito />
+            <Certificados/>
+            <Metodologia/>
+            <ComoFazemos/>
+            <Contato/>
+          </>
+          }
          </>
       )
-    }
-
-    //renderiza isso
-
-
-    //senão 
-
-    //renderiza isso
-   return (
-    <>
-          <Banner/>
-          <NossosClientes/>
-          <Fundador/>
-          <Localizacao/>
-          <Proposito />
-          <Certificados/>
-          <Metodologia/>
-          <ComoFazemos/>
-          <Contato/>
-    </>
-
-
-  );
 }

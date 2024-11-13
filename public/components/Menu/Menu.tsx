@@ -1,10 +1,11 @@
 import styles from "./sass/styles.module.css";
-import { useState, useEffect} from "react";
+import { useState, useEffect, Dispatch, SetStateAction} from "react";
 import Link from "next/link";
 
 interface PropsMenu {
     menuOpen: boolean;
-    setMenuOpen: (open: boolean) => void
+    // setMenuOpen: (open: boolean) => void
+    setMenuOpen: Dispatch<SetStateAction<boolean>>
 }
 
 export default function Menu({menuOpen, setMenuOpen}: PropsMenu) {

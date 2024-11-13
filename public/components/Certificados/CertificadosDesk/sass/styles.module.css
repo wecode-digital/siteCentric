@@ -11,12 +11,12 @@
 }
 .sectionCertificados .texts .title {
   color: #bababa;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 .sectionCertificados .texts .titleCertificados {
   color: #1e1e1e;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 .sectionCertificados .texts .titleCertificados > span {
   color: #e91034;
@@ -24,7 +24,7 @@
 }
 .sectionCertificados .texts .text {
   color: #353a42;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   margin: 1rem 0 2rem 0;
 }
@@ -58,6 +58,22 @@
   background-color: #fff;
   width: 163px;
   height: 163px;
+}
+.sectionCertificados .containerCertificados .boxCertificados2 {
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #c2c2c2;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  width: 163px;
+  height: 163px;
+  left: 6rem;
+  position: relative;
 }
 .sectionCertificados .containerCertificados .boxCertificadosCenter {
   display: flex;

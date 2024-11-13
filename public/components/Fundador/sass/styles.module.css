@@ -33,6 +33,11 @@
   font-weight: 700;
 }
 @media screen and (min-width: 1008px) {
+  .sectionFounders .titles .knowFounders {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1008px) {
   .sectionFounders .titles {
     text-align: center;
     gap: 1.5rem;

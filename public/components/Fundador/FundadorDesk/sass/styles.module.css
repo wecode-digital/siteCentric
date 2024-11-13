@@ -19,13 +19,13 @@
 }
 .sectionFounders .titles .titleFounders {
   color: #bababa;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 .sectionFounders .titles .knowFounders {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -65,7 +65,7 @@
   font-size: 1.5rem;
 }
 .sectionFounders .FourdersEstruct .Founder .text {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

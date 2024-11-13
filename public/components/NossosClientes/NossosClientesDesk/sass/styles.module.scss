@@ -1,8 +1,17 @@
-@import "../../../../app/styles/padroes/padroes.scss";
+@import "../../../../../app/styles/padroes/padroes.scss";
 
 .nossosClientes {
   padding: 2.5rem 1rem 4.5rem 1rem;
   background: $neutral-200;
+
+  img {
+    width: 100%;
+  }
+
+  svg {
+    width: 123px;
+    height: auto;
+  }
 
   .containerClientes {
     display: grid;
@@ -12,6 +21,13 @@
     grid-row-gap: 2rem;
     margin-bottom: 2rem;
     align-items: center;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10.5rem;
+    grid-row-gap: 1rem;
+    justify-items: center;
+    padding: 0 15% !important;
   }
 
   .textsNossosClientes {
@@ -30,19 +46,24 @@
 
     .textNossosClientes {
       color: $neutral-800;
-      font-size: $fontSize5;
+      font-size: $fontSize8;
       font-style: normal;
       font-weight: $weight2;
       line-height: normal;
 
       span {
         color: $color--brand-primary;
-        font-size: $fontSize5;
+        font-size: $fontSize8;
         font-style: normal;
         font-weight: $weight5;
         line-height: normal;
       }
+      > p {
+        padding: 0 19rem 0;
+      }
     }
+
+    text-align: center;
   }
 
   .buttonDiv {
@@ -54,9 +75,15 @@
       font-weight: $weight5;
       line-height: normal;
     }
+
+    padding: 5rem 0 0;
+    position: relative;
+    left: 47%;
   }
 
   .belasLetras {
     grid-column: 2;
+
+    grid-column: auto;
   }
 }

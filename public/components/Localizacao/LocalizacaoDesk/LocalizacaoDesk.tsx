@@ -1,11 +1,11 @@
 
-import styles from '../sass/styles.module.css'
+import styles from './sass/styles.module.css'
 
 export default function LocalizacaoDesk () {
 
 
     return(
-        <section className={styles.sectionWhere}>
+        <section className={styles.sectionWhereDesk}>
             <div className={styles.texts}>
                 <p className={styles.identificacaoSection}>Onde estamos</p>
                 <h1 className={styles.titleWhere}>Conheça nosso <span>escritório</span></h1>
@@ -21,6 +21,7 @@ export default function LocalizacaoDesk () {
                 <img src="/assets/png/sala6-desktop.png" alt="entrada" />
                 <img src="/assets/png/sala7-desktop.png" alt="entrada" />
                 <img src="/assets/png/sala8-desktop.png" alt="entrada" />
+                <img src="/assets/png/sala9-desktop.png" alt="" />
             </div>
         </section>
     )

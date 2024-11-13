@@ -1,7 +1,7 @@
 @import "../../../../../app/styles/padroes/padroes.scss";
 
-.sectioComoDesk {
-  padding: 2.5rem 1rem 3.5rem;
+.sectioComo {
+  padding: 2.5rem 1rem 0;
   font-style: normal;
   line-height: normal;
   background-color: $neutral-200;
@@ -33,23 +33,31 @@
 
   .sectionPlanejamento {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
-    flex-direction: row;
     justify-content: center;
 
-    > div:first-child {
-      .planejamento {
-        .subtitulo {
-          color: $neutral-800;
-        }
-        svg path {
-          fill: $neutral-800;
-        }
-      }
+    > div {
+      flex-basis: 17.86vw;
+      min-width: 200px;
+    }
 
-      .contentText {
-        background-color: $neutral-800;
-      }
+    > div:nth-child(4),
+    > div:nth-child(5) {
+      flex-basis: 48%;
+      min-width: 400px;
+      flex-basis: 43%;
+      flex-direction: column;
+      display: flex;
+    }
+
+    > div:nth-child(4) {
+      justify-content: end;
+      align-items: end;
+    }
+
+    > div:nth-child(5) {
+      justify-content: start;
     }
 
     .planejamento {

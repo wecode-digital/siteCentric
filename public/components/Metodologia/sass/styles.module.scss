@@ -15,6 +15,10 @@
       color: $neutral-600;
       font-size: $fontSize3;
       font-weight: $weight5;
+
+      @media screen and (min-width: 1008px) {
+        font-size: $fontSize4;
+      }
     }
     .title {
       color: $neutral-800;
@@ -25,12 +29,20 @@
         color: $color--brand-primary;
         font-weight: $weight5;
       }
+
+      @media screen and (min-width: 1008px) {
+        font-size: $fontSize8;
+      }
     }
 
     .text {
       color: $neutral-900;
       font-size: $fontSize2;
       font-weight: $weight2;
+
+      @media screen and (min-width: 1008px) {
+        font-size: $fontSize3;
+      }
     }
 
     @media screen and (min-width: 1008px) {
@@ -59,6 +71,12 @@
       border-radius: 100%;
       gap: 0.625rem;
 
+      @media screen and (min-width: 1008px) {
+        width: 14rem;
+        height: 14rem;
+        padding: 0rem 1.5rem;
+      }
+
       .svg {
         border-radius: 1.25rem;
         border: 1px solid $pure-white;
@@ -68,6 +86,18 @@
         padding: 0.625rem;
         display: flex;
         flex-direction: column;
+
+        @media screen and (min-width: 1008px) {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 62.5rem;
+          padding: 1.5rem;
+
+          svg {
+            width: 32px;
+            height: 32px;
+          }
+        }
       }
 
       .textSlider {
@@ -94,6 +124,12 @@
       border-radius: 100%;
       gap: 0.625rem;
 
+      @media screen and (min-width: 1008px) {
+        width: 14rem;
+        height: 14rem;
+        padding: 0rem 1.5rem;
+      }
+
       .svg {
         border-radius: 1.25rem;
         border: 1px solid $pure-white;
@@ -103,6 +139,18 @@
         padding: 0.625rem;
         display: flex;
         flex-direction: column;
+
+        @media screen and (min-width: 1008px) {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 62.5rem;
+          padding: 1.5rem;
+
+          svg {
+            width: 32px;
+            height: 32px;
+          }
+        }
       }
 
       .textSlider {
@@ -129,6 +177,12 @@
       border-radius: 100%;
       gap: 0.625rem;
 
+      @media screen and (min-width: 1008px) {
+        width: 14rem;
+        height: 14rem;
+        padding: 0rem 1.5rem;
+      }
+
       .svg {
         border-radius: 1.25rem;
         border: 1px solid $pure-white;
@@ -138,6 +192,18 @@
         padding: 0.625rem;
         display: flex;
         flex-direction: column;
+
+        @media screen and (min-width: 1008px) {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 62.5rem;
+          padding: 1.5rem;
+
+          svg {
+            width: 32px;
+            height: 32px;
+          }
+        }
       }
 
       .textSlider {
@@ -164,6 +230,12 @@
       border-radius: 100%;
       gap: 0.625rem;
 
+      @media screen and (min-width: 1008px) {
+        width: 14rem;
+        height: 14rem;
+        padding: 0rem 1.5rem;
+      }
+
       .svg {
         border-radius: 1.25rem;
         border: 1px solid $pure-white;
@@ -173,6 +245,18 @@
         padding: 0.625rem;
         display: flex;
         flex-direction: column;
+
+        @media screen and (min-width: 1008px) {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 62.5rem;
+          padding: 1.5rem;
+
+          svg {
+            width: 32px;
+            height: 32px;
+          }
+        }
       }
 
       .textSlider {
@@ -199,6 +283,12 @@
       border-radius: 100%;
       gap: 0.625rem;
 
+      @media screen and (min-width: 1008px) {
+        width: 14rem;
+        height: 14rem;
+        padding: 0rem 1.5rem;
+      }
+
       .svg {
         border-radius: 1.25rem;
         border: 1px solid $pure-white;
@@ -208,6 +298,18 @@
         padding: 0.625rem;
         display: flex;
         flex-direction: column;
+
+        @media screen and (min-width: 1008px) {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 62.5rem;
+          padding: 1.5rem;
+
+          svg {
+            width: 32px;
+            height: 32px;
+          }
+        }
       }
 
       .textSlider {

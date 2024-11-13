@@ -1,46 +1,56 @@
-.sectioComoDesk {
-  padding: 2.5rem 1rem 3.5rem;
+.sectioComo {
+  padding: 2.5rem 1rem 0;
   font-style: normal;
   line-height: normal;
   background-color: #f5f5f5;
   text-align: center;
 }
-.sectioComoDesk .texts {
+.sectioComo .texts {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.sectioComoDesk .texts .titleComo {
+.sectioComo .texts .titleComo {
   color: #bababa;
   font-size: 1rem;
   font-weight: 700;
 }
-.sectioComoDesk .texts .title {
+.sectioComo .texts .title {
   color: #1e1e1e;
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 2rem;
 }
-.sectioComoDesk .texts .title > span {
+.sectioComo .texts .title > span {
   color: #e91034;
   font-weight: 700;
 }
-.sectioComoDesk .sectionPlanejamento {
+.sectioComo .sectionPlanejamento {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
-  flex-direction: row;
   justify-content: center;
 }
-.sectioComoDesk .sectionPlanejamento > div:first-child .planejamento .subtitulo {
-  color: #1e1e1e;
+.sectioComo .sectionPlanejamento > div {
+  flex-basis: 17.86vw;
+  min-width: 200px;
 }
-.sectioComoDesk .sectionPlanejamento > div:first-child .planejamento svg path {
-  fill: #1e1e1e;
+.sectioComo .sectionPlanejamento > div:nth-child(4),
+.sectioComo .sectionPlanejamento > div:nth-child(5) {
+  flex-basis: 48%;
+  min-width: 400px;
+  flex-basis: 43%;
+  flex-direction: column;
+  display: flex;
 }
-.sectioComoDesk .sectionPlanejamento > div:first-child .contentText {
-  background-color: #1e1e1e;
+.sectioComo .sectionPlanejamento > div:nth-child(4) {
+  justify-content: end;
+  align-items: end;
 }
-.sectioComoDesk .sectionPlanejamento .planejamento {
+.sectioComo .sectionPlanejamento > div:nth-child(5) {
+  justify-content: start;
+}
+.sectioComo .sectionPlanejamento .planejamento {
   padding: 1.5rem;
   display: flex;
   flex-direction: row;
@@ -51,22 +61,22 @@
   cursor: pointer;
   width: 17.86vw;
 }
-.sectioComoDesk .sectionPlanejamento .planejamento .subtitulo {
+.sectioComo .sectionPlanejamento .planejamento .subtitulo {
   color: #93133c;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
   line-height: 1.5rem;
 }
-.sectioComoDesk .sectionPlanejamento .planejamento svg path {
+.sectioComo .sectionPlanejamento .planejamento svg path {
   fill: #93133c;
 }
-.sectioComoDesk .sectionPlanejamento .contentText {
+.sectioComo .sectionPlanejamento .contentText {
   padding: 1.5rem;
   background-color: #93133c;
   width: 17.86vw;
 }
-.sectioComoDesk .sectionPlanejamento .contentText > p {
+.sectioComo .sectionPlanejamento .contentText > p {
   color: #fff;
   font-size: 0.875rem;
   font-style: normal;

@@ -20,8 +20,8 @@ export default function Contato() {
     phone: '',
     honeypot: '',
     message: '',
-    replyTo: 'jullyene.ramos@wecode.digital',
-    accessKey: '1089cc73-812f-4929-b781-885addb93934'
+    replyTo: 'felipe@centric.ag',
+    accessKey: 'aa87328d-8939-4a40-a533-ee85e99caabf'
   });
 
   const [response, setResponse] = useState({
@@ -152,7 +152,7 @@ export default function Contato() {
                 name='phone'
                 value={contact.phone}
                 onChange={handleChange}
-                placeholder="+55 (000) 9 9999-9999"
+                placeholder="(000) 9 9999-9999"
                 maxLength={15}
                 required
               />

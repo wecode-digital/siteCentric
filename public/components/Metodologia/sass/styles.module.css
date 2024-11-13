@@ -14,6 +14,11 @@
   font-size: 1rem;
   font-weight: 700;
 }
+@media screen and (min-width: 1008px) {
+  .sectioMetodologia .texts .titleMetodologia {
+    font-size: 1.125rem;
+  }
+}
 .sectioMetodologia .texts .title {
   color: #1e1e1e;
   font-size: 1.5rem;
@@ -23,10 +28,20 @@
   color: #e91034;
   font-weight: 700;
 }
+@media screen and (min-width: 1008px) {
+  .sectioMetodologia .texts .title {
+    font-size: 2.5rem;
+  }
+}
 .sectioMetodologia .texts .text {
   color: #353a42;
   font-size: 0.875rem;
   font-weight: 400;
+}
+@media screen and (min-width: 1008px) {
+  .sectioMetodologia .texts .text {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 1008px) {
   .sectioMetodologia .texts {
@@ -54,6 +69,13 @@
   border-radius: 100%;
   gap: 0.625rem;
 }
+@media screen and (min-width: 1008px) {
+  .sectioMetodologia .containerSlider .itemsSlider1 {
+    width: 14rem;
+    height: 14rem;
+    padding: 0rem 1.5rem;
+  }
+}
 .sectioMetodologia .containerSlider .itemsSlider1 .svg {
   border-radius: 1.25rem;
   border: 1px solid #fff;
@@ -63,6 +85,18 @@
   padding: 0.625rem;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1008px) {
+  .sectioMetodologia .containerSlider .itemsSlider1 .svg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 62.5rem;
+    padding: 1.5rem;
+  }
+  .sectioMetodologia .containerSlider .itemsSlider1 .svg svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 .sectioMetodologia .containerSlider .itemsSlider1 .textSlider {
   color: #fff;
@@ -86,6 +120,13 @@
   border-radius: 100%;
   gap: 0.625rem;
 }
+@media screen and (min-width: 1008px) {
+  .sectioMetodologia .containerSlider .itemsSlider2 {
+    width: 14rem;
+    height: 14rem;
+    padding: 0rem 1.5rem;
+  }
+}
 .sectioMetodologia .containerSlider .itemsSlider2 .svg {
   border-radius: 1.25rem;
   border: 1px solid #fff;
@@ -95,6 +136,18 @@
   padding: 0.625rem;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1008px) {
+  .sectioMetodologia .containerSlider .itemsSlider2 .svg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 62.5rem;
+    padding: 1.5rem;
+  }
+  .sectioMetodologia .containerSlider .itemsSlider2 .svg svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 .sectioMetodologia .containerSlider .itemsSlider2 .textSlider {
   color: #fff;
@@ -118,6 +171,13 @@
   border-radius: 100%;
   gap: 0.625rem;
 }
+@media screen and (min-width: 1008px) {
+  .sectioMetodologia .containerSlider .itemsSlider3 {
+    width: 14rem;
+    height: 14rem;
+    padding: 0rem 1.5rem;
+  }
+}
 .sectioMetodologia .containerSlider .itemsSlider3 .svg {
   border-radius: 1.25rem;
   border: 1px solid #fff;
@@ -127,6 +187,18 @@
   padding: 0.625rem;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1008px) {
+  .sectioMetodologia .containerSlider .itemsSlider3 .svg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 62.5rem;
+    padding: 1.5rem;
+  }
+  .sectioMetodologia .containerSlider .itemsSlider3 .svg svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 .sectioMetodologia .containerSlider .itemsSlider3 .textSlider {
   color: #fff;
@@ -150,6 +222,13 @@
   border-radius: 100%;
   gap: 0.625rem;
 }
+@media screen and (min-width: 1008px) {
+  .sectioMetodologia .containerSlider .itemsSlider4 {
+    width: 14rem;
+    height: 14rem;
+    padding: 0rem 1.5rem;
+  }
+}
 .sectioMetodologia .containerSlider .itemsSlider4 .svg {
   border-radius: 1.25rem;
   border: 1px solid #fff;
@@ -159,6 +238,18 @@
   padding: 0.625rem;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1008px) {
+  .sectioMetodologia .containerSlider .itemsSlider4 .svg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 62.5rem;
+    padding: 1.5rem;
+  }
+  .sectioMetodologia .containerSlider .itemsSlider4 .svg svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 .sectioMetodologia .containerSlider .itemsSlider4 .textSlider {
   color: #fff;
@@ -182,6 +273,13 @@
   border-radius: 100%;
   gap: 0.625rem;
 }
+@media screen and (min-width: 1008px) {
+  .sectioMetodologia .containerSlider .itemsSlider5 {
+    width: 14rem;
+    height: 14rem;
+    padding: 0rem 1.5rem;
+  }
+}
 .sectioMetodologia .containerSlider .itemsSlider5 .svg {
   border-radius: 1.25rem;
   border: 1px solid #fff;
@@ -191,6 +289,18 @@
   padding: 0.625rem;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1008px) {
+  .sectioMetodologia .containerSlider .itemsSlider5 .svg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 62.5rem;
+    padding: 1.5rem;
+  }
+  .sectioMetodologia .containerSlider .itemsSlider5 .svg svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 .sectioMetodologia .containerSlider .itemsSlider5 .textSlider {
   color: #fff;

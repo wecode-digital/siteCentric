@@ -36,6 +36,10 @@
       .emphasiTitle {
         font-weight: $weight5;
       }
+
+      @media screen and (min-width: 1008px) {
+        font-size: $fontSize9;
+      }
     }
     .textBanner {
       color: $color--brand-secondary-150;
@@ -43,6 +47,10 @@
       font-style: normal;
       font-weight: $weight2;
       line-height: normal;
+
+      @media screen and (min-width: 1008px) {
+        font-size: $fontSize6;
+      }
     }
   }
 
@@ -55,10 +63,9 @@
     line-height: normal;
 
     @media screen and (min-width: 1008px) {
-      // position: absolute;
-      // left: 50%;
-      // bottom: 36%;
-      // transform: translateX(-50%) translateY(50%);
+      position: absolute;
+      left: 47%;
+      bottom: 29%;
     }
   }
 }

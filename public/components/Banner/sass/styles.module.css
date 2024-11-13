@@ -35,12 +35,22 @@
 .banner .textsBanner .tituloBanner .emphasiTitle {
   font-weight: 700;
 }
+@media screen and (min-width: 1008px) {
+  .banner .textsBanner .tituloBanner {
+    font-size: 3rem;
+  }
+}
 .banner .textsBanner .textBanner {
   color: #dbad83;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media screen and (min-width: 1008px) {
+  .banner .textsBanner .textBanner {
+    font-size: 1.5rem;
+  }
 }
 .banner .button {
   border: 1px solid #fff;
@@ -53,4 +63,11 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+@media screen and (min-width: 1008px) {
+  .banner .button {
+    position: absolute;
+    left: 47%;
+    bottom: 29%;
+  }
 }

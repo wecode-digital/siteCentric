@@ -53,3 +53,68 @@
   font-weight: 300;
   line-height: 1.5rem;
 }
+
+.footerDesk .footerImageCentric {
+  display: flex;
+  flex-direction: row;
+  background-color: #dbad83;
+}
+.footerDesk .footerImageCentric .footerDiv {
+  background-color: #e91034;
+  padding: 0rem 2.5rem;
+  width: 16%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footerDesk .footerInformations {
+  display: flex;
+  padding: 5rem 8.25rem;
+  gap: 6rem;
+}
+.footerDesk .footerInformations .tituloFooter {
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.footerDesk .footerInformations .tituloFooter .subtituloFooter {
+  color: #93133c;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.footerDesk .footerInformations .tituloFooter .contatoEnderecoFooter {
+  color: #1e1e1e;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.footerDesk .footerInformations .tituloFooter .contatoEnderecoFooter:hover {
+  text-decoration: underline;
+  color: #1e1e1e;
+}
+.footerDesk .footerInformations .tituloFooter .linksFooter {
+  color: #1e1e1e;
+  text-align: start;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+.footerDesk .footerInformations .tituloFooter .linksFooter:hover {
+  text-decoration: underline;
+  color: #1e1e1e;
+}
+.footerDesk .footerInformations .tituloFooter .redesFooter {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}

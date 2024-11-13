@@ -11,7 +11,7 @@
   margin-left: -16px;
   transition: all 0.3s ease-in-out !important;
   z-index: 1;
-  align-items: start;
+  align-items: center;
 
   .itemsMenuDesk {
     display: none;
@@ -28,6 +28,14 @@
         flex-direction: row;
         display: flex;
         gap: 2rem;
+
+        @media screen and (min-width: 1008px) {
+          font-size: $fontSize4;
+          font-style: normal;
+          font-weight: $weight2;
+          line-height: 1.5rem; /* 133.333% */
+          letter-spacing: 0.01125rem;
+        }
 
         a {
           display: flex;

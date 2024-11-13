@@ -13,6 +13,10 @@
       color: $neutral-600;
       font-size: $fontSize3;
       font-weight: $weight5;
+
+      @media screen and (min-width: 1008px) {
+        font-size: $fontSize4;
+      }
     }
 
     .title {
@@ -23,6 +27,10 @@
       > span {
         color: $color--brand-secondary-500;
         font-weight: $weight5;
+      }
+
+      @media screen and (min-width: 1008px) {
+        font-size: $fontSize8;
       }
     }
 
@@ -57,6 +65,10 @@
         line-height: 1.5rem;
         width: 12.1875rem;
         height: 13.75rem;
+
+        @media screen and (min-width: 1008px) {
+          font-size: $fontSize5;
+        }
       }
 
       .textSlide {
