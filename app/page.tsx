@@ -1,6 +1,6 @@
-
 "use client"
 
+import { useEffect, useState } from 'react';
 import Contato from "@/public/components/Contato/Contato";
 import ComoFazemos from "@/public/components/ComoFazemos/ComoFazemos";
 import Metodologia from "@/public/components/Metodologia/Metodologia";
@@ -18,42 +18,57 @@ import LocalizacaoDesk from "@/public/components/Localizacao/LocalizacaoDesk/Loc
 import NossosClientesDesk from "@/public/components/NossosClientes/NossosClientesDesk/NossosClientesDesk";
 
 export default function Home() {
+  const [windowWidth, setWindowWidth] = useState<number | undefined>(undefined);
 
-  const a = window   
-  if(!a) return<></>
-    const controlWindowLargura = a?.innerWidth;
-
-    console.table(controlWindowLargura)
-    //se a minha tela tiver mais do que 1008px ou igual a 1008px
+  useEffect(() => {
    
-      return(
-        
-         <> 
-         {controlWindowLargura >= 1008?
-          <>
-            <Banner/>
-            <NossosClientesDesk/>
-            <FundadorDesk/>
-            <LocalizacaoDesk/>
-            <Proposito />
-            <CertificadosDesk/>
-            <Metodologia/>
-            <ComoFazemosDesk/>
-            <ContatoDesk/>
-          </>
-          :
-          <>
-            <Banner/>
-            <NossosClientes/>
-            <Fundador/>
-            <Localizacao/>
-            <Proposito />
-            <Certificados/>
-            <Metodologia/>
-            <ComoFazemos/>
-            <Contato/>
-          </>
-          }
-         </>
-      )
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+
+      
+      window.addEventListener('resize', handleResize);
+
+     
+      setWindowWidth(window.innerWidth);
+
+      
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
+
+  if (windowWidth === undefined) return <></>; 
+
+  return (
+    <>
+      {windowWidth >= 1008 ? (
+        <>
+          <Banner />
+          <NossosClientesDesk />
+          <FundadorDesk />
+          <LocalizacaoDesk />
+          <Proposito />
+          <CertificadosDesk />
+          <Metodologia />
+          <ComoFazemosDesk />
+          <ContatoDesk />
+        </>
+      ) : (
+        <>
+          <Banner />
+          <NossosClientes />
+          <Fundador />
+          <Localizacao />
+          <Proposito />
+          <Certificados />
+          <Metodologia />
+          <ComoFazemos />
+          <Contato />
+        </>
+      )}
+    </>
+  );
 }

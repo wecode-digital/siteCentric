@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import styles from "./sass/styles.module.css";
 
@@ -31,29 +32,30 @@ export default function ContatoDesk () {
 
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
-  useEffect(() => {
-    if (response.type.toLowerCase().includes('success')) {
-      setTimeout(() => {
-        setResponse({ type: '', message: '' });
-      }, 5000);
+  const mphone = (v: string) => {
+    let r = v.replace(/\D/g, ""); 
+    r = r.replace(/^0/, ""); 
+  
+    if (r.length > 10) {
+      r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3"); 
+    } else if (r.length > 5) {
+      r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3"); 
+    } else if (r.length > 2) {
+      r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+    } else {
+      r = r.replace(/^(\d*)/, "($1"); 
     }
-  }, [response]);
-
-  // Função para formatar telefone
-  const formatPhone = (value: string) => {
-    return value
-      .replace(/\D/g, '')
-      .replace(/^(\d{2})(\d)/, '($1) $2')
-      .replace(/(\d{5})(\d)/, '$1-$2')
-      .replace(/(-\d{4})\d+?$/, '$1');
+  
+    return r;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setContact({
-      ...contact,
-      [name]: name === 'phone' ? formatPhone(value) : value
-    });
+  
+    setContact(prevContact => ({
+      ...prevContact,
+      [name]: name === 'phone' && value.length > prevContact.phone.length ? mphone(value) : value
+    }));
   };
 
   const dataLayerEvent = (data: ContactInfo) => {
@@ -70,6 +72,8 @@ export default function ContatoDesk () {
       });
     }
   };
+
+  
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

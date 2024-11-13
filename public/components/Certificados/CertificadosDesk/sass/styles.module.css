@@ -41,9 +41,13 @@
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }
-.sectionCertificados .containerCertificados img {
+.sectionCertificados .containerCertificados .imgs {
   width: inherit;
   padding: 1rem;
+}
+.sectionCertificados .containerCertificados .imgs2 {
+  width: inherit;
+  padding: 0 1rem;
 }
 .sectionCertificados .containerCertificados .boxCertificados {
   display: flex;
@@ -60,6 +64,22 @@
   height: 163px;
 }
 .sectionCertificados .containerCertificados .boxCertificados2 {
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #c2c2c2;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  width: 163px;
+  height: 163px;
+  left: 6rem;
+  position: relative;
+}
+.sectionCertificados .containerCertificados .boxCertificados1 {
   display: flex;
   height: inherit;
   flex-direction: column;

@@ -32,26 +32,28 @@ export default function Contato() {
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const mphone = (v: string) => {
-    let r = v.replace(/\D/g, "");
-    r = r.replace(/^0/, "");
+    let r = v.replace(/\D/g, ""); 
+    r = r.replace(/^0/, ""); 
+  
     if (r.length > 10) {
-      r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+      r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3"); 
     } else if (r.length > 5) {
-      r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+      r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3"); 
     } else if (r.length > 2) {
       r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
     } else {
-      r = r.replace(/^(\d*)/, "($1");
+      r = r.replace(/^(\d*)/, "($1"); 
     }
+  
     return r;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-
+  
     setContact(prevContact => ({
       ...prevContact,
-      [name]: name === 'phone' ? mphone(value) : value
+      [name]: name === 'phone' && value.length > prevContact.phone.length ? mphone(value) : value
     }));
   };
 

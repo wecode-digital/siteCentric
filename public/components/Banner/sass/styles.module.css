@@ -6,7 +6,7 @@
 }
 @media screen and (min-width: 1008px) {
   .banner {
-    background-image: url("../../../assets//png/banner-desk.png");
+    background-image: url("../../../assets//svg/banner-desk.svg");
     height: 1026px;
   }
 }
@@ -63,11 +63,39 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 1rem;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+.banner .button .setaSaiba {
+  display: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateX(0);
 }
 @media screen and (min-width: 1008px) {
   .banner .button {
     position: absolute;
     left: 47%;
     bottom: 29%;
+    width: 10rem;
+    height: 4rem;
+    justify-content: center;
+  }
+  .banner .button:hover {
+    background-color: rgba(147, 19, 60, 0.9);
+    width: 12rem;
+    height: 4rem;
+  }
+  .banner .button:hover .setaSaiba {
+    display: block;
+    opacity: 1;
+    transform: translateX(5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
 }

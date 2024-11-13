@@ -12,7 +12,7 @@ export default function CertificadosDesk () {
 
             <div className={styles.containerCertificados}>
                 <div className={styles.boxCertificados}>
-                    <img src="/assets/png/certificado1-desktop.png" alt="certificado-meta" />
+                    <img className={styles.imgs}  src="/assets/png/certificado1-desktop.png" alt="certificado-meta" />
                 </div>
 
                 <div className={styles.boxCertificados}>
@@ -27,33 +27,33 @@ export default function CertificadosDesk () {
                 </div>
 
                 <div className={styles.boxCertificados}>
-                    <img src="/assets/png/certificado3-desktop.png" alt="certificado-tiktok-ads" />
+                    <img className={styles.imgs} src="/assets/png/certificado3-desktop.png" alt="certificado-tiktok-ads" />
                 </div>
 
                 <div className={styles.boxCertificados}>
-                    <img src="/assets/png/certificado4-desktop.png" alt="certificado-marketing-partners" />
+                    <img className={styles.imgs}  src="/assets/png/certificado4-desktop.png" alt="certificado-marketing-partners" />
                 </div>
 
                 <div className={styles.boxCertificados}>
-                    <img src="/assets/png/certificado5-desktop.png" alt="certificado-looker" />
+                    <img className={styles.imgs}  src="/assets/png/certificado5-desktop.png" alt="certificado-looker" />
                 </div>
 
                 <div className={styles.boxCertificados2}>
-                    <img src="/assets/png/certificado6-desktop.png" alt="certificado-google-analytics" />
+                    <img className={styles.imgs}  src="/assets/png/certificado6-desktop.png" alt="certificado-google-analytics" />
+                </div>
+
+                <div className={styles.boxCertificados1}>
+                    <img  src="/assets/png/certificado7-1-desktop.png" alt="certificado-google-tag-manager" />
+                    <img className={styles.imgs2}  src="/assets/png/certificado7-2-desktop.png" alt="certificado-google-tag-manager" />
+                     
                 </div>
 
                 <div className={styles.boxCertificados2}>
-                    {/* <img src="/assets/png/certificado7-1-desktop.png" alt="certificado-google-tag-manager" />
-                    <img src="/assets/png/certificado7-2-desktop.png" alt="certificado-google-tag-manager" /> */}
-                     <img src="/assets/png/certificado6-desktop.png" alt="certificado-google-analytics" />
+                    <img className={styles.imgs}  src="/assets/png/certificado8-desktop.png" alt="certificado-stape"/>
                 </div>
 
                 <div className={styles.boxCertificados2}>
-                    <img src="/assets/png/certificado8-desktop.png" alt="certificado-stape"/>
-                </div>
-
-                <div className={styles.boxCertificados2}>
-                    <img src="/assets/png/certificado9-desktop.png" alt="certificado-google-cloud"/>
+                    <img className={styles.imgs} src="/assets/png/certificado9-desktop.png" alt="certificado-google-cloud"/>
                 </div>
             </div>
         </section>

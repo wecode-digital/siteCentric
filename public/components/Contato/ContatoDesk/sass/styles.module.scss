@@ -107,4 +107,9 @@
     font-weight: $weight2;
     line-height: normal;
   }
+
+  textarea.items_form {
+    width: 100%;
+    resize: vertical;
+  }
 }

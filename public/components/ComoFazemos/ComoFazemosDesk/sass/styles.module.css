@@ -25,6 +25,13 @@
   color: #e91034;
   font-weight: 700;
 }
+@media screen and (min-width: 1008px) {
+  .sectioComo .texts .title {
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    padding: 0 19rem 0;
+  }
+}
 .sectioComo .sectionPlanejamento {
   display: flex;
   flex-wrap: wrap;

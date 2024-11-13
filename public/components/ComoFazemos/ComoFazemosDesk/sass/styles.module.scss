@@ -28,6 +28,12 @@
         color: $color--brand-primary;
         font-weight: $weight5;
       }
+
+      @media screen and (min-width: 1008px) {
+        font-size: $fontSize8;
+        margin-bottom: 5rem;
+        padding: 0 19rem 0;
+      }
     }
   }
 

@@ -88,3 +88,7 @@
   font-weight: 400;
   line-height: normal;
 }
+.sectionContato textarea.items_form {
+  width: 100%;
+  resize: vertical;
+}

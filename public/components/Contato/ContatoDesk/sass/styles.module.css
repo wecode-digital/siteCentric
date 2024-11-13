@@ -97,3 +97,7 @@
   font-weight: 400;
   line-height: normal;
 }
+.sectionContatoDesk textarea.items_form {
+  width: 100%;
+  resize: vertical;
+}
