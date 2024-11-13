@@ -87,10 +87,10 @@ export default function Header() {
               <Link href="#nossos-clientes">Nossos clientes</Link>
               <Link href="#quem-somos">Quem somos</Link>
               <Link href="#onde-estamos">Onde Estamos</Link>
-              <Link href="#proposito">Diferenciais</Link>
-              <Link href="#certificados">Certificados</Link>
+              <Link href="#proposito">Propósito</Link>
+              {/* <Link href="#certificados">Certificados</Link> */}
               <Link href="#metodologia">Metodologia</Link>
-              <Link href="#como-fazemos">Soluções</Link>
+              {/* <Link href="#como-fazemos">Soluções</Link> */}
               <Link href="#contato">Contato</Link>
             </li>
           </ul>
