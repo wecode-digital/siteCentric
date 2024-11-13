@@ -82,15 +82,13 @@
   .banner .button {
     position: absolute;
     left: 47%;
-    bottom: 29%;
+    bottom: 20%;
     width: 10rem;
-    height: 4rem;
     justify-content: center;
   }
   .banner .button:hover {
     background-color: rgba(147, 19, 60, 0.9);
     width: 12rem;
-    height: 4rem;
   }
   .banner .button:hover .setaSaiba {
     display: block;
