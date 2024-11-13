@@ -9,20 +9,23 @@ export default function Footer() {
   
     // const controlWindowLargura2 = b?.innerWidth;
 
-    const [windowVal, setWindowVal] = useState<any>()
-    
-    useEffect(()=> {
-        setWindowVal(window)
-    },[])
-    // const controlWindowLargura2 = 1000;
+    const [windowVal, setWindowVal] = useState<any>();
 
-      if(!windowVal) return <></>
-        const controlWindowLargura = windowVal?.innnerWidth;
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setWindowVal(window);
+        }
+    }, []);
+
+    if (!windowVal) return <></>;
+
+    const controlWindowLargura = windowVal?.innerWidth;
     
     return (
         
         <>
-        {controlWindowLargura >= 1008?
+        {controlWindowLargura >= 1008? (
+            
             <>
                     <footer className={styles.footerDesk}>
                         <section className={styles.footerImageCentric}>
@@ -174,8 +177,8 @@ export default function Footer() {
 
                     </footer>
             </>
+        ):(
 
-            :
             <>
             
             {/* se for mobile */}
@@ -300,6 +303,8 @@ export default function Footer() {
             </footer>
 
             </>
+        )
+            
         } 
 
         </>

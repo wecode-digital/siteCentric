@@ -45,7 +45,7 @@ export default function ComoFazemos (props:any) {
     
 
     return(
-        <section className={styles.sectioComo}>
+        <section className={styles.sectioComo} id="como-fazemos">
             <div className={styles.texts}>
                 <p className={styles.titleComo}>Como fazemos</p>
                 <h1 className={styles.title}>Conheça as principais <span>entregas</span> que sustentam a <span>evolução</span> <span>contínua</span> do projeto e garantem a obtenção de <span>resultados</span>

@@ -84,14 +84,14 @@ export default function Header() {
         <div className={styles.itemsMenuDesk}>
           <ul>
             <li className={styles.listItems}>
-              <Link href="#">Nossos clientes</Link>
-              <Link href="#">Quem somos</Link>
-              <Link href="#">Onde Estamos</Link>
-              <Link href="#">Diferenciais</Link>
-              <Link href="#">Certificados</Link>
-              <Link href="#">Metodologia</Link>
-              <Link href="#">Soluções</Link>
-              <Link href="#">Contato</Link>
+              <Link href="#nossos-clientes">Nossos clientes</Link>
+              <Link href="#quem-somos">Quem somos</Link>
+              <Link href="#onde-estamos">Onde Estamos</Link>
+              <Link href="#proposito">Diferenciais</Link>
+              <Link href="#certificados">Certificados</Link>
+              <Link href="#metodologia">Metodologia</Link>
+              <Link href="#como-fazemos">Soluções</Link>
+              <Link href="#contato">Contato</Link>
             </li>
           </ul>
         </div>

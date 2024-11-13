@@ -3,7 +3,7 @@ import styles from "./sass/styles.module.css"
 export default function CertificadosDesk () {
 
     return (
-        <section className={styles.sectionCertificados}>
+        <section className={styles.sectionCertificados} id="certificados">
             <div className={styles.texts}>
                 <p className={styles.title}>Certificados</p>
                 <h1 className={styles.titleCertificados}>Especialistas <span>Certificados</span></h1>

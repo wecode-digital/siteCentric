@@ -1,11 +1,12 @@
 
 import styles from './sass/styles.module.css'
+import Link from 'next/link'
 
 export default function LocalizacaoDesk () {
 
 
     return(
-        <section className={styles.sectionWhereDesk}>
+        <section className={styles.sectionWhereDesk} id="onde-estamos">
             <div className={styles.texts}>
                 <p className={styles.identificacaoSection}>Onde estamos</p>
                 <h1 className={styles.titleWhere}>Conheça nosso <span>escritório</span></h1>

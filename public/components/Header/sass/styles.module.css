@@ -47,7 +47,7 @@
   }
   .header .itemsMenuDesk .listItems a:hover {
     text-decoration: underline;
-    text-decoration-color: #93133c;
+    text-decoration-color: #fff;
   }
   .header svg path {
     width: 159px !important;
