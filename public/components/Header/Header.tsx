@@ -1,4 +1,5 @@
 "use client"
+
 import styles from "./sass/styles.module.scss";
 import Menu from "../Menu/Menu";
 import { useEffect, useState, useRef } from "react";
@@ -15,7 +16,7 @@ export default function Header() {
 
   const abreMenu = () => {
     setTimeout(function() {
-      setMenuOpen(curr => !curr);
+      setMenuOpen(prevstate => !prevstate);
       console.log("cliquei",menuOpen);
     },);
   };

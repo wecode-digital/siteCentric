@@ -1,3 +1,4 @@
+"use client"
 
 import React, { useEffect, useState } from 'react';
 import styles from "./sass/styles.module.css";
@@ -59,8 +60,19 @@ export default function ContatoDesk () {
   };
 
   const dataLayerEvent = (data: ContactInfo) => {
-    if (typeof window.dataLayer !== 'undefined' && window.dataLayer?.push) {
-      window.dataLayer.push({
+    // const windows = window;
+
+    const[windowVal, setWindowVal] = useState<any>()
+
+    useEffect(()=>{
+      setWindowVal(window)
+    },[])
+
+    if(!windowVal)return<></>
+    // eslint-disable-next-line  @typescript-eslint/no-explicit-any
+    const dataLayer = windowVal?.dataLayer;
+    if (typeof dataLayer !== 'undefined' && dataLayer?.push) {
+      dataLayer.push({
         dadosCliente: {
           nome: data.name,
           empresa: data.enterprise,
@@ -90,7 +102,7 @@ export default function ContatoDesk () {
 
       if (json.success) {
         setResponse({ type: 'success', message: 'Enviado' });
-        dataLayerEvent(contact);
+        // dataLayerEvent(contact);
 
         setContact({
           name: '',

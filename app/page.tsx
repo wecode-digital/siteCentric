@@ -1,6 +1,5 @@
 "use client"
 
-import { useEffect, useState } from 'react';
 import Contato from "@/public/components/Contato/Contato";
 import ComoFazemos from "@/public/components/ComoFazemos/ComoFazemos";
 import Metodologia from "@/public/components/Metodologia/Metodologia";
@@ -16,59 +15,47 @@ import CertificadosDesk from "@/public/components/Certificados/CertificadosDesk/
 import FundadorDesk from "@/public/components/Fundador/FundadorDesk/FundadorDesk";
 import LocalizacaoDesk from "@/public/components/Localizacao/LocalizacaoDesk/LocalizacaoDesk";
 import NossosClientesDesk from "@/public/components/NossosClientes/NossosClientesDesk/NossosClientesDesk";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [windowWidth, setWindowWidth] = useState<number | undefined>(undefined);
+  const [windowVal,setWindowVal] = useState<any>()
 
-  useEffect(() => {
-   
-    if (typeof window !== 'undefined') {
-      const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-      };
+useEffect(()=>{
+  setWindowVal(window)
+},[])
 
-      
-      window.addEventListener('resize', handleResize);
+  
+  if(!windowVal) return<></>
+    const controlWindowLargura = windowVal?.innerWidth;
 
-     
-      setWindowWidth(window.innerWidth);
-
-      
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }
-  }, []);
-
-  if (windowWidth === undefined) return <></>; 
-
-  return (
-    <>
-      {windowWidth >= 1008 ? (
-        <>
-          <Banner />
-          <NossosClientesDesk />
-          <FundadorDesk />
-          <LocalizacaoDesk />
-          <Proposito />
-          <CertificadosDesk />
-          <Metodologia />
-          <ComoFazemosDesk />
-          <ContatoDesk />
-        </>
-      ) : (
-        <>
-          <Banner />
-          <NossosClientes />
-          <Fundador />
-          <Localizacao />
-          <Proposito />
-          <Certificados />
-          <Metodologia />
-          <ComoFazemos />
-          <Contato />
-        </>
-      )}
-    </>
-  );
+    return(
+        
+      <> 
+      {controlWindowLargura >= 1008?
+       <>
+         <Banner/>
+         <NossosClientesDesk/>
+         <FundadorDesk/>
+         <LocalizacaoDesk/>
+         <Proposito />
+         <CertificadosDesk/>
+         <Metodologia/>
+         <ComoFazemosDesk/>
+         <ContatoDesk/>
+       </>
+       :
+       <>
+         <Banner/>
+         <NossosClientes/>
+         <Fundador/>
+         <Localizacao/>
+         <Proposito />
+         <Certificados/>
+         <Metodologia/>
+         <ComoFazemos/>
+         <Contato/>
+       </>
+       }
+      </>
+   )
 }

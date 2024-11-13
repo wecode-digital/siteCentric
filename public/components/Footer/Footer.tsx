@@ -1,26 +1,28 @@
 "use client"
+
 import styles from "./sass/styles.module.css";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function Footer() {
-    const [windowWidth, setWindowWidth] = useState<number | null>(null);
+    // const b = window
+  
+    // const controlWindowLargura2 = b?.innerWidth;
 
-    useEffect(() => {
-        // Verifica se o código está sendo executado no lado do cliente
-        if (typeof window !== 'undefined') {
-            const b = window;
-            setWindowWidth(b.innerWidth); // Atualiza o estado com a largura da janela
-        }
-    }, []); // O array vazio faz com que o useEffect seja chamado apenas uma vez, após o componente ser montado
+    const [windowVal, setWindowVal] = useState<any>()
+    
+    useEffect(()=> {
+        setWindowVal(window)
+    },[])
+    // const controlWindowLargura2 = 1000;
 
-    if (windowWidth === null) return <></>; // Retorna nada até que a largura da janela seja obtida
-
+      if(!windowVal) return <></>
+        const controlWindowLargura = windowVal?.innnerWidth;
     
     return (
         
         <>
-        {windowWidth >= 1008 ? 
+        {controlWindowLargura >= 1008?
             <>
                     <footer className={styles.footerDesk}>
                         <section className={styles.footerImageCentric}>
