@@ -39,6 +39,10 @@
 
       @media screen and (min-width: 1008px) {
         font-size: $fontSize9;
+        font-size: 3rem;
+        text-overflow: ellipsis;
+        white-space: pre-line;
+        overflow: hidden;
       }
     }
     .textBanner {
@@ -78,11 +82,12 @@
 
     @media screen and (min-width: 1008px) {
       position: absolute;
-      left: 47%;
-      bottom: 20%;
+      left: 50%;
+      bottom: 4rem;
       width: 10rem;
       // height: 4rem;
       justify-content: center;
+      transform: translateX(-50%);
 
       &:hover {
         background-color: rgba(147, 19, 60, 0.9);

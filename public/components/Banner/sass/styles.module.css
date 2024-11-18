@@ -38,6 +38,10 @@
 @media screen and (min-width: 1008px) {
   .banner .textsBanner .tituloBanner {
     font-size: 3rem;
+    font-size: 3rem;
+    text-overflow: ellipsis;
+    white-space: pre-line;
+    overflow: hidden;
   }
 }
 .banner .textsBanner .textBanner {
@@ -81,10 +85,11 @@
 @media screen and (min-width: 1008px) {
   .banner .button {
     position: absolute;
-    left: 47%;
-    bottom: 20%;
+    left: 50%;
+    bottom: 4rem;
     width: 10rem;
     justify-content: center;
+    transform: translateX(-50%);
   }
   .banner .button:hover {
     background-color: rgba(147, 19, 60, 0.9);
