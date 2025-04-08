@@ -11,13 +11,13 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const headerRef = useRef(null);
 
-  console.table(menuOpen)
+  // console.table(menuOpen)
   
 
   const abreMenu = () => {
     setTimeout(function() {
       setMenuOpen(prevstate => !prevstate);
-      console.log("cliquei",menuOpen);
+      // console.log("cliquei",menuOpen);
     },);
   };
 

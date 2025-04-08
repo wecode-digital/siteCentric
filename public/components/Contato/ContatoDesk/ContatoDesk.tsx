@@ -14,7 +14,18 @@ type ContactInfo = {
   accessKey: string
 }
 
-export default function ContatoDesk () {
+const initialContactState: ContactInfo = {
+  name: '',
+  email: '',
+  enterprise: '',
+  phone: '',
+  honeypot: '',
+  message: '',
+  replyTo: 'felipe@centric.ag',
+  accessKey: 'aa87328d-8939-4a40-a533-ee85e99caabf'
+};
+
+export default function ContatoDesk() {
   const [contact, setContact] = useState<ContactInfo>({
     name: '',
     email: '',
@@ -34,25 +45,25 @@ export default function ContatoDesk () {
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const mphone = (v: string) => {
-    let r = v.replace(/\D/g, ""); 
-    r = r.replace(/^0/, ""); 
-  
+    let r = v.replace(/\D/g, "");
+    r = r.replace(/^0/, "");
+
     if (r.length > 10) {
-      r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3"); 
+      r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
     } else if (r.length > 5) {
-      r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3"); 
+      r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
     } else if (r.length > 2) {
       r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
     } else {
-      r = r.replace(/^(\d*)/, "($1"); 
+      r = r.replace(/^(\d*)/, "($1");
     }
-  
+
     return r;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-  
+
     setContact(prevContact => ({
       ...prevContact,
       [name]: name === 'phone' && value.length > prevContact.phone.length ? mphone(value) : value
@@ -62,30 +73,28 @@ export default function ContatoDesk () {
   const dataLayerEvent = (data: ContactInfo) => {
     // const windows = window;
 
-    const[windowVal, setWindowVal] = useState<any>()
+    const [windowVal, setWindowVal] = useState<any>()
 
-    useEffect(()=>{
+    useEffect(() => {
       setWindowVal(window)
-    },[])
+    }, [])
 
-    if(!windowVal)return<></>
+    if (!windowVal) return <></>
     // eslint-disable-next-line  @typescript-eslint/no-explicit-any
-    const dataLayer = windowVal?.dataLayer;
-    if (typeof dataLayer !== 'undefined' && dataLayer?.push) {
-      dataLayer.push({
-        dadosCliente: {
-          nome: data.name,
-          empresa: data.enterprise,
-          telefone: data.phone,
-          email: data.email,
-          mensagem: data.message
-        },
-        event: "submitFormCentric"
-      });
-    }
-  };
 
-  
+    window?.dataLayer?.push({
+      dadosCliente: {
+        nome: data.name,
+        empresa: data.enterprise,
+        telefone: data.phone,
+        email: data.email,
+        mensagem: data.message
+      },
+      event: "submitFormCentric"
+    })
+  }
+
+
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -94,26 +103,16 @@ export default function ContatoDesk () {
     try {
       const res = await fetch('https://api.staticforms.xyz/submit', {
         method: 'POST',
-        body: JSON.stringify(contact),
-        headers: { 'Content-Type': 'application/json' }
+        body: JSON.stringify(contact)
       });
-
       const json = await res.json();
+      console.log("RES", res, json)
 
-      if (json.success) {
+      if (res.ok) {
         setResponse({ type: 'success', message: 'Enviado' });
-        // dataLayerEvent(contact);
+        dataLayerEvent(contact);
 
-        setContact({
-          name: '',
-          email: '',
-          enterprise: '',
-          phone: '',
-          honeypot: '',
-          message: '',
-          replyTo: 'jullyene.ramos@wecode.digital',
-          accessKey: '1089cc73-812f-4929-b781-885addb93934'
-        });
+        setContact(initialContactState);
       } else {
         setResponse({ type: 'error', message: json.message });
       }
@@ -122,6 +121,7 @@ export default function ContatoDesk () {
       setResponse({ type: 'error', message: 'An error occurred while submitting the form' });
     } finally {
       setIsButtonDisabled(false);
+      setContact(initialContactState);
     }
   };
 
@@ -130,7 +130,7 @@ export default function ContatoDesk () {
       <div className={styles.containerDados}>
         <div className={styles.texts}>
           <p className={styles.titleContact}>Contato</p>
-          
+
           <div className={styles.form}>
             <h1 className={styles.title}>Vamos <span>conversar!</span></h1>
             <p className={styles.text}>Preencha o formulário abaixo que entraremos em contato.</p>

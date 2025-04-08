@@ -13,8 +13,8 @@ export default function Menu({menuOpen, setMenuOpen}: PropsMenu) {
     
     useEffect(() => {
         document.body.style.overflow = menuOpen ? 'hidden' : 'auto';
-        console.log("Funciona");
-        console.log("Conferindo overflow", document.body.style.overflow);
+        // console.log("Funciona");
+        // console.log("Conferindo overflow", document.body.style.overflow);
 
         return() => {
             document.body.style.overflow = 'auto';
