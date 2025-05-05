@@ -133,7 +133,8 @@ export default function ContatoDesk() {
 
           <div className={styles.form}>
             <h1 className={styles.title}>Vamos <span>conversar!</span></h1>
-            <p className={styles.text}>Preencha o formulário abaixo que entraremos em contato.</p>
+            <p className={styles.text}>Preencha o formulário para que possamos falar com você ou entre em contato 
+            pelos canais abaixo.</p>
           </div>
         </div>
 

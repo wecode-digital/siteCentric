@@ -107,7 +107,8 @@ export default function Contato() {
         <div className={styles.texts}>
           <p className={styles.titleContact}>Contato</p>
           <h1 className={styles.title}>Vamos <span>conversar!</span></h1>
-          <p className={styles.text}>Preencha o formulário abaixo que entraremos em contato.</p>
+          <p className={styles.text}>Preencha o formulário para que possamos falar com você ou entre em contato 
+          pelos canais abaixo.</p>
         </div>
 
         <form
