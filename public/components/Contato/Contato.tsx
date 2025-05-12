@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
 import styles from "./sass/styles.module.css";
 
@@ -9,8 +9,6 @@ type ContactInfo = {
   phone: string;
   honeypot: string;
   message: string;
-  replyTo: string;
-  accessKey: string;
 };
 
 export default function Contato() {
@@ -20,9 +18,7 @@ export default function Contato() {
     enterprise: '',
     phone: '',
     honeypot: '',
-    message: '',
-    replyTo: 'felipe@centric.ag',
-    accessKey: 'aa87328d-8939-4a40-a533-ee85e99caabf'
+    message: ''
   });
 
   const [response, setResponse] = useState({
@@ -33,25 +29,25 @@ export default function Contato() {
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const mphone = (v: string) => {
-    let r = v.replace(/\D/g, ""); 
-    r = r.replace(/^0/, ""); 
-  
+    let r = v.replace(/\D/g, "");
+    r = r.replace(/^0/, "");
+
     if (r.length > 10) {
-      r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3"); 
+      r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
     } else if (r.length > 5) {
-      r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3"); 
+      r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
     } else if (r.length > 2) {
       r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
     } else {
-      r = r.replace(/^(\d*)/, "($1"); 
+      r = r.replace(/^(\d*)/, "($1");
     }
-  
+
     return r;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-  
+
     setContact(prevContact => ({
       ...prevContact,
       [name]: name === 'phone' && value.length > prevContact.phone.length ? mphone(value) : value
@@ -63,40 +59,36 @@ export default function Contato() {
     setIsButtonDisabled(true);
 
     try {
-      const res = await fetch('https://api.staticforms.xyz/submit', {
+      const res = await fetch('/api/form-submit', {
         method: 'POST',
-        body: JSON.stringify(contact),
-        headers: { 'Content-Type': 'application/json' }
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(contact)
       });
 
       const json = await res.json();
 
-      if (json.success) {
-        setResponse({ type: 'success', message: 'Enviado' });
-
+      if (res.ok) {
+        setResponse({ type: 'success', message: 'Enviado com sucesso' });
         setContact({
           name: '',
           email: '',
           enterprise: '',
           phone: '',
           honeypot: '',
-          message: '',
-          replyTo: 'jullyene.ramos@wecode.digital',
-          accessKey: '1089cc73-812f-4929-b781-885addb93934'
+          message: ''
         });
 
         setTimeout(() => {
           setIsButtonDisabled(false);
           setResponse({ type: '', message: '' });
         }, 3000);
-
       } else {
-        setResponse({ type: 'error', message: json.message });
+        setResponse({ type: 'error', message: json.message || 'Erro ao enviar' });
         setIsButtonDisabled(false);
       }
     } catch (e) {
-      console.log('An error occurred', e);
-      setResponse({ type: 'error', message: 'An error occurred while submitting the form' });
+      console.error('Erro ao enviar:', e);
+      setResponse({ type: 'error', message: 'Erro no envio do formulário' });
       setIsButtonDisabled(false);
     }
   };
@@ -107,16 +99,12 @@ export default function Contato() {
         <div className={styles.texts}>
           <p className={styles.titleContact}>Contato</p>
           <h1 className={styles.title}>Vamos <span>conversar!</span></h1>
-          <p className={styles.text}>Preencha o formulário para que possamos falar com você ou entre em contato 
-          pelos canais abaixo.</p>
+          <p className={styles.text}>
+            Preencha o formulário para que possamos falar com você ou entre em contato pelos canais abaixo.
+          </p>
         </div>
 
-        <form
-          method="post"
-          id="formstatic"
-          onSubmit={handleSubmit}
-          className="form_contato"
-        >
+        <form method="post" onSubmit={handleSubmit} className="form_contato">
           <div className={styles.group_form}>
             <div>
               <label htmlFor="name">Nome*</label>
@@ -137,8 +125,8 @@ export default function Contato() {
               <input
                 className={styles.items_form}
                 type="text"
-                id="nomeEmpresa"
-                name='enterprise'
+                id="enterprise"
+                name="enterprise"
                 required
                 value={contact.enterprise}
                 onChange={handleChange}
@@ -150,13 +138,13 @@ export default function Contato() {
               <label htmlFor="phone">Telefone*</label>
               <input
                 className={styles.items_form}
-                inputMode='numeric'
+                inputMode="numeric"
                 type="tel"
-                id="telefone"
-                name='phone'
+                id="phone"
+                name="phone"
                 value={contact.phone}
                 onChange={handleChange}
-                placeholder="(000) 9 9999-9999"
+                placeholder="(00) 00000-0000"
                 maxLength={15}
                 required
               />
@@ -166,7 +154,7 @@ export default function Contato() {
               <label htmlFor="email">E-mail*</label>
               <input
                 className={styles.items_form}
-                name='email'
+                name="email"
                 type="email"
                 id="email"
                 required
@@ -177,20 +165,20 @@ export default function Contato() {
             </div>
 
             <div>
-              <label htmlFor="suaMensagem"> Sua mensagem*</label>
+              <label htmlFor="message">Sua mensagem*</label>
               <textarea
                 className={styles.items_form}
                 name="message"
-                id="mensagem"
+                id="message"
                 required
                 value={contact.message}
                 onChange={handleChange}
                 placeholder="Escreva aqui sua mensagem"
-              ></textarea>
+              />
             </div>
 
             <button className={styles.button} type="submit" disabled={isButtonDisabled}>
-              {isButtonDisabled ? 'Enviado' : 'Enviar'}
+              {isButtonDisabled ? 'Enviando...' : 'Enviar'}
             </button>
           </div>
         </form>
