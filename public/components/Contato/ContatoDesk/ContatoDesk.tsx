@@ -57,7 +57,7 @@ export default function ContatoDesk() {
     setIsButtonDisabled(true);
 
     try {
-      const res = await fetch('/api/form-desk', {
+      const res = await fetch('/api/form-submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(contact),
@@ -88,6 +88,7 @@ export default function ContatoDesk() {
       setIsButtonDisabled(false);
     }
   };
+
 
   return (
     <section className={styles.sectionContatoDesk} id="contato">
