@@ -58,8 +58,11 @@
     }
 
     > div:nth-child(4) {
-      justify-content: end;
+      // justify-content: end;
       align-items: end;
+      // align-items: start;
+      justify-content: start;
+
     }
 
     > div:nth-child(5) {

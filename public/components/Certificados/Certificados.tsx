@@ -1,5 +1,5 @@
 
-import styles from "./sass/styles.module.css"
+import styles from "./sass/styles.module.scss"
 export default function Certificados () {
 
     return (

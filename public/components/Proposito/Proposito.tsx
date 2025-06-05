@@ -1,4 +1,4 @@
-import styles from '../Proposito/sass/styles.module.css'
+import styles from '../Proposito/sass/styles.module.scss'
 
 // import '@splidejs/splide/css';
 

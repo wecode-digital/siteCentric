@@ -39,7 +39,8 @@
         .title {
           font-size: $fontSize9;
           font-weight: $weight2;
-          > span {
+
+          >span {
             color: $color--brand-primary;
             font-weight: $weight5;
           }
@@ -58,12 +59,12 @@
     width: 33vw;
     gap: 1.5rem;
 
-    > div {
+    >div {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
 
-      > label {
+      >label {
         color: $neutral-800;
         font-size: $fontSize2;
         font-style: normal;
@@ -101,11 +102,15 @@
     border-radius: 0.25rem;
     border: 1px solid $neutral-700;
     background: $pure-white;
-    color: $neutral-600;
-    font-size: $fontSize1;
+    color: $neutral-800;
+    font-size: 16px;
     font-style: normal;
     font-weight: $weight2;
     line-height: normal;
+
+    &::placeholder {
+      color: $neutral-600;
+    }
   }
 
   textarea.items_form {

@@ -1,5 +1,5 @@
 
-import styles from './sass/styles.module.css'
+import styles from './sass/styles.module.scss'
 import Link from 'next/link'
 
 export default function LocalizacaoDesk () {

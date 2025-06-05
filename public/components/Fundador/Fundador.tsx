@@ -1,4 +1,4 @@
-import styles from '../Fundador/sass/styles.module.css'
+import styles from '../Fundador/sass/styles.module.scss'
 export default function Fundador () {
     
     return(

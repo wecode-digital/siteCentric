@@ -35,20 +35,20 @@
     flex-direction: column;
     gap: 1rem;
 
-    > div:first-child {
-      .planejamento {
-        .subtitulo {
-          color: $neutral-800;
-        }
-        svg path {
-          fill: $neutral-800;
-        }
-      }
+    // > div:first-child {
+    //   .planejamento {
+    //     .subtitulo {
+    //       color: $neutral-800;
+    //     }
+    //     svg path {
+    //       fill: $neutral-800;
+    //     }
+    //   }
 
-      .contentText {
-        background-color: $neutral-800;
-      }
-    }
+    //   .contentText {
+    //     background-color: $neutral-800;
+    //   }
+    // }
 
     .planejamento {
       padding: 1.5rem;

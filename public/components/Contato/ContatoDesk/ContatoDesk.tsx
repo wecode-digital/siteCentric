@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
-import styles from "./sass/styles.module.css";
+import styles from "./sass/styles.module.scss";
 
 type ContactInfo = {
   name: string;

@@ -46,6 +46,9 @@
   }
 
   .buttonDiv {
+    display: flex;
+    width: fit-content;
+    margin-inline: 0 auto;
     .button {
       @include btn2;
       color: $pure-white;

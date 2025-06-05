@@ -1,5 +1,5 @@
 
-import styles from "./sass/styles.module.css";
+import styles from "./sass/styles.module.scss";
 import Header from "@/public/components/Header/Header";
 import LinkWhatsapp from "../linkWhatsapp/linkWhatsapp";
 import Link from "next/link";

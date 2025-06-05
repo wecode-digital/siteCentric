@@ -1,4 +1,4 @@
-import styles from "./sass/styles.module.css";
+import styles from "./sass/styles.module.scss";
 
 function linkWhatsapp () {
 

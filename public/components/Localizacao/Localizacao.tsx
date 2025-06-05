@@ -1,5 +1,5 @@
 
-import styles from '../Localizacao/sass/styles.module.css'
+import styles from '../Localizacao/sass/styles.module.scss'
 
 export default function Localizacao () {
 

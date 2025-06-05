@@ -91,11 +91,15 @@
     border-radius: 0.25rem;
     border: 1px solid $neutral-700;
     background: $pure-white;
-    color: $neutral-600;
+    color: $neutral-800;
     font-size: $fontSize3;
     font-style: normal;
     font-weight: $weight2;
     line-height: normal;
+    
+    &::placeholder {
+      color: $neutral-600;
+    }
   }
 
   textarea.items_form {
