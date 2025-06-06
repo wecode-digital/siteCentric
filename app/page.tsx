@@ -14,7 +14,7 @@ import ComoFazemosDesk from "@/public/components/ComoFazemos/ComoFazemosDesk/Com
 import CertificadosDesk from "@/public/components/Certificados/CertificadosDesk/CertificadosDesk";
 import FundadorDesk from "@/public/components/Fundador/FundadorDesk/FundadorDesk";
 import LocalizacaoDesk from "@/public/components/Localizacao/LocalizacaoDesk/LocalizacaoDesk";
-import NossosClientesDesk from "@/public/components/NossosClientes/NossosClientesDesk/NossosClientesDesk";
+// import NossosClientesDesk from "@/public/components/NossosClientes/NossosClientesDesk/NossosClientesDesk";
 import { useEffect, useState } from "react";
 
 export default function Home() {
