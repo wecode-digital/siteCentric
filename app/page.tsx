@@ -34,7 +34,7 @@ useEffect(()=>{
       {controlWindowLargura >= 1008?
        <>
          <Banner/>
-         <NossosClientesDesk/>
+         <NossosClientes/>
          <FundadorDesk/>
          <LocalizacaoDesk/>
          <Proposito />
