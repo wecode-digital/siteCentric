@@ -9,6 +9,7 @@ import Fundador from "@/public/components/Fundador/Fundador";
 import Banner from "@/public/components/Banner/Banner";
 import Localizacao from "@/public/components/Localizacao/Localizacao";
 import NossosClientes from "@/public/components/NossosClientes/NossosClientes";
+import NossosClientesDesk from "@/public/components/NossosClientes/NossosClientesDesk/NossosClientesDesk";
 import ContatoDesk from "@/public/components/Contato/ContatoDesk/ContatoDesk";
 import ComoFazemosDesk from "@/public/components/ComoFazemos/ComoFazemosDesk/ComoFazemosDesk";
 import CertificadosDesk from "@/public/components/Certificados/CertificadosDesk/CertificadosDesk";
@@ -46,7 +47,7 @@ useEffect(()=>{
        :
        <>
          <Banner/>
-         <NossosClientes/>
+         <NossosClientesDesk/>
          <Fundador/>
          <Localizacao/>
          <Proposito />

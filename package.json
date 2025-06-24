@@ -14,15 +14,15 @@
     "react": "18.2",
     "react-dom": "18.2",
     "react-modal": "^3.16.1",
-    "sass": "^1.80.4"
+    "sass": "^1.89.2"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/node": "20.19.1",
+    "@types/react": "18.3.23",
     "@types/react-dom": "^18",
     "@types/react-modal": "^3.16.1",
     "eslint": "^8",
     "eslint-config-next": "15.0.1",
-    "typescript": "^5"
+    "typescript": "5.8.3"
   }
 }
