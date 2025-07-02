@@ -216,7 +216,12 @@ export default function NossosClientes() {
 
                 {/*Andreazza*/}
                 <div>
-                  <Svg23 />
+                  <Image
+                    width="65"
+                    height="25"
+                    src={logoandreazza}
+                    alt="logo-andreazza"
+                  ></Image>
                 </div>
 
                 {/*3tentos*/}
