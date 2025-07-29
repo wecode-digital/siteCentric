@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Footer from "@/public/components/Footer/Footer";
 import "./globals.css";
 import localFont from 'next/font/local';
+import GoogleTagManager, { GoogleTagManagerNoScript } from './components/GoogleTagManager';
 
 const myFont = localFont({
   src: './assets/fonts/Jost-400-Book.otf',
@@ -23,9 +24,11 @@ export default function RootLayout({
  
   return (
     <html lang="pt-BR" className={myFont.className}>
+      <head>
+        <GoogleTagManager />
+      </head>
       <body>
-
-          {/* <Header /> */}
+        <GoogleTagManagerNoScript />
         {children}
         <> 
             <Footer/>
