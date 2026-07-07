@@ -1,11 +1,6 @@
 declare module "*.css";
 declare module "*.scss";
 
-interface DataLayerEvent {
-  event: string;
-  [key: string]: any; // Permite outras propriedades com chaves de string
-}
-
 declare global {
   interface Window {
     dataLayer: {
