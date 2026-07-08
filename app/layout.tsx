@@ -17,6 +17,14 @@ export const metadata: Metadata = {
   },
 };
 
+/** Sinaliza ao Google que a Centric (nome antigo) é a mesma entidade da Norden. */
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Centric",
+  sameAs: ["https://norden.ec"],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,6 +35,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={myFont.className}>
       <head>
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <GoogleTagManager />
       </head>
       <body>
